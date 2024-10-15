@@ -1,1890 +1,2381 @@
 # Learn Introductory JavaScript by Building a Pyramid Generator
 
+JavaScript is a powerful scripting language that you can use to make web pages interactive. It's one of the core technologies of the web, along with HTML and CSS. All modern browsers support JavaScript.
+
+In this practice project, you'll learn fundamental programming concepts in JavaScript by coding your own Pyramid Generator. You'll learn how to work with arrays, strings, functions, loops, if/else statements, and more.
+
 ## Step1:
 
-Step1 description
 
-**Source file link:** [script_step1.js](./script_step1.js)
+<p>JavaScript is the programming language that powers the web. Unlike the HTML and CSS you have learned previously, JavaScript is most commonly used to write logic instead of markup.</p>
 
-;;;script_step1.js;;;
+<p>In this project, you will learn the basics of Javascript and apply those concepts to building a pyramid generator.</p>
+
+<p>A pyramid generator is a program where you can set the type of character, the count for the pyramid, and the direction of the pyramid. The program will then generate a pyramid based on those inputs.</p>
+
+<p>Click on the "Check your code" button to proceed to the next step and start the project.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step1.js](./pyramidGenerator_step1.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step2:
 
-Step2 description
 
-**Source file link:** [script_step2.js](./script_step2.js)
+<p>One of the most important concepts in programming is variables. A <dfn>variable</dfn> points to a specific memory address that stores a value. Variables are given a name which can be used throughout your code to access that value.</p>
 
-;;;script_step2.js;;;
+<p>Declaring a variable means giving it a name. In JavaScript, this is often done with the <code>let</code> keyword. For example, here is how you would declare a <code>hello</code> variable:</p>
+
+<p>Variable naming follows specific rules: names can include letters, numbers, dollar signs, and underscores, but cannot contain spaces and must not begin with a number.</p>
+
+<p>Use the <code>let</code> keyword to declare a variable called <code>character</code>.</p>
+
+<p><em>Note</em>: It is common practice to end statements in JavaScript with a semicolon. <code>;</code></p>
+
+
+
+**Source file link:** [pyramidGenerator_step2.js](./pyramidGenerator_step2.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step3:
 
-Step3 description
 
-**Source file link:** [script_step3.js](./script_step3.js)
+<p>Your <code>character</code> variable currently does not have a value. You can assign a value using the <dfn>assignment</dfn> operator <code>=</code>. For example:</p>
 
-;;;script_step3.js;;;
+<p>Assigning a value to a variable at the moment of its declaration is known as <dfn>initialization</dfn>.</p>
+
+<p>Initialize your <code>character</code> variable by assigning it the value <code>"Hello"</code> during its declaration.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step3.js](./pyramidGenerator_step3.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step4:
 
-Step4 description
 
-**Source file link:** [script_step4.js](./script_step4.js)
+<p>JavaScript has seven primitive data types, with String being one of them. In JavaScript, a <dfn>string</dfn> represents a sequence of characters and can be enclosed in either single (<code>'</code>) or double (<code>"</code>) quotes.</p>
 
-;;;script_step4.js;;;
+<p>Note that strings are <dfn>immutable</dfn>, which means once they are created, they cannot be changed. The variable can still be reassigned another value.</p>
+
+<p>Change your <code>"Hello"</code> string to use single quotes.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step4.js](./pyramidGenerator_step4.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step5:
 
-Step5 description
 
-**Source file link:** [script_step5.js](./script_step5.js)
+<p>The <dfn>console</dfn> allows you to print and view JavaScript output. You can send information to the console using <code>console.log()</code>. For example, this code will print <code>"Naomi"</code> to the console:</p>
 
-;;;script_step5.js;;;
+<p>The code above accesses the <code>developer</code> variable with its name in the <code>console.log()</code>. Note that the value between the parentheses is the value that will be printed.</p>
+
+<p>Print the value of the <code>character</code> variable to the console. Then, click the "Console" button to view the JavaScript console.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step5.js](./pyramidGenerator_step5.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step6:
 
-Step6 description
 
-**Source file link:** [script_step6.js](./script_step6.js)
+<p>When a variable is declared with the <code>let</code> keyword, you can <dfn>reassign</dfn> (or change the value of) that variable later on. In this example, the value of <code>programmer</code> is changed from <code>"Naomi"</code> to <code>"CamperChan"</code>.</p>
 
-;;;script_step6.js;;;
+<p>Note that when reassigning a variable, you do <strong>not</strong> use the <code>let</code> keyword again.</p>
+
+<p>After your <code>console.log</code>, assign the value <code>"World"</code> to your <code>character</code> variable.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step6.js](./pyramidGenerator_step6.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step7:
 
-Step7 description
 
-**Source file link:** [script_step7.js](./script_step7.js)
+<p>Now log your <code>character</code> variable to the console again. You should see the string <code>"Hello"</code>, then the string <code>"World"</code>, in the console.</p>
 
-;;;script_step7.js;;;
+
+
+**Source file link:** [pyramidGenerator_step7.js](./pyramidGenerator_step7.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step8:
 
-Step8 description
 
-**Source file link:** [script_step8.js](./script_step8.js)
+<p>When variable names are more than one word, there are specific naming conventions for how you capitalize the words. In JavaScript, the convention to use is <dfn>camel case</dfn>.</p>
 
-;;;script_step8.js;;;
+<p>Camel case means that the first word in the name is entirely lowercase, but the following words are all title-cased. Here are some examples of camel case:</p>
+
+<p>Use camel case to declare a new <code>secondCharacter</code> variable.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step8.js](./pyramidGenerator_step8.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step9:
 
-Step9 description
 
-**Source file link:** [script_step9.js](./script_step9.js)
+<p>When you declare a variable without initializing it, it is considered <dfn>uninitialized</dfn>. Currently, your <code>secondCharacter</code> variable is uninitialized.</p>
 
-;;;script_step9.js;;;
+<p>Add a <code>console.log()</code> to see what the value of your <code>secondCharacter</code> variable is.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step9.js](./pyramidGenerator_step9.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step10:
 
-Step10 description
 
-**Source file link:** [script_step10.js](./script_step10.js)
+<p>The default value of an uninitialized variable is <code>undefined</code>. This is a special data type that represents a value that does not have a definition yet.</p>
 
-;;;script_step10.js;;;
+<p>You can still assign a value to an uninitialized variable. Here is an example:</p>
+
+<p>Assign the string <code>"Test"</code> to your <code>secondCharacter</code> variable below your declaration. Open the console to see how your log has changed.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step10.js](./pyramidGenerator_step10.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step11:
 
-Step11 description
 
-**Source file link:** [script_step11.js](./script_step11.js)
+<p>You can also assign the value of a variable to another variable. For example:</p>
 
-;;;script_step11.js;;;
+<p>The <code>second</code> variable would now have the value <code>"One"</code>.</p>
+
+<p>To see this in action, change your <code>secondCharacter</code> assignment from <code>"Test"</code> to your <code>character</code> variable.</p>
+
+<p>Then open the console to see what gets logged.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step11.js](./pyramidGenerator_step11.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step12:
 
-Step12 description
 
-**Source file link:** [script_step12.js](./script_step12.js)
+<p>You are now ready to declare your next variable. Remove both <code>console.log</code> statements, and the <code>character</code> reassignment.</p>
 
-;;;script_step12.js;;;
+<p>Also remove your <code>secondCharacter</code> variable, but leave the <code>character</code> initialization unchanged.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step12.js](./pyramidGenerator_step12.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step13:
 
-Step13 description
 
-**Source file link:** [script_step13.js](./script_step13.js)
+<p>Before moving forward, you should take a moment to review the concepts you have learned.</p>
 
-;;;script_step13.js;;;
+<p>Use the <code>let</code> keyword to declare a <code>profession</code> variable and an <code>age</code> variable. Initialize <code>profession</code> with the string <code>"teacher"</code>, but do not initialize <code>age</code> with any value.</p>
+
+<p>Log both of your variables to the console to see the results.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step13.js](./pyramidGenerator_step13.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step14:
 
-Step14 description
 
-**Source file link:** [script_step14.js](./script_step14.js)
+<p>Now that you have reviewed declaration and initialization, remove the code you wrote for your review.</p>
 
-;;;script_step14.js;;;
+<p>Do not remove your <code>character</code> variable.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step14.js](./pyramidGenerator_step14.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step15:
 
-Step15 description
 
-**Source file link:** [script_step15.js](./script_step15.js)
+<p>Use <code>let</code> to declare a <code>count</code> variable. Assign it the <dfn>number</dfn> <code>8</code>. When using a number value, you do not use quotes. For example:</p>
 
-;;;script_step15.js;;;
+
+
+**Source file link:** [pyramidGenerator_step15.js](./pyramidGenerator_step15.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step16:
 
-Step16 description
 
-**Source file link:** [script_step16.js](./script_step16.js)
+<p>With the <code>number</code> data type, you can perform mathematical operations, like addition. Try printing <code>count + 1</code> to the console.</p>
 
-;;;script_step16.js;;;
+
+
+**Source file link:** [pyramidGenerator_step16.js](./pyramidGenerator_step16.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step17:
 
-Step17 description
 
-**Source file link:** [script_step17.js](./script_step17.js)
+<p>You can also perform subtraction (<code>-</code>), multiplication (<code>*</code>), and division (<code>/</code>). Feel free to experiment with the operators and numbers in your <code>console.log</code>. When you are ready to move on, remove the <code>console.log</code>.</p>
 
-;;;script_step17.js;;;
+
+
+**Source file link:** [pyramidGenerator_step17.js](./pyramidGenerator_step17.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step18:
 
-Step18 description
 
-**Source file link:** [script_step18.js](./script_step18.js)
+<p>In programming, you will often need to work with lots of data. There are many data structures that can help you organize and manage your data. One of the most basic data structures is an <dfn>array</dfn>.</p>
 
-;;;script_step18.js;;;
+<p>An <dfn>array</dfn> is a non-primitive data type that can hold a series of values. Non-primitive data types differ from primitive data types in that they can hold more complex data. Primitive data types like strings and numbers can only hold one value at a time.</p>
+
+<p>Arrays are denoted using square brackets (<code>[]</code>). Here is an example of a variable with the value of an empty array:</p>
+
+<p>Declare a <code>rows</code> variable and assign it an empty array.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step18.js](./pyramidGenerator_step18.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step19:
 
-Step19 description
 
-**Source file link:** [script_step19.js](./script_step19.js)
+<p>When an array holds values, or <dfn>elements</dfn>, those values are separated by commas. Here is an array that holds two strings:</p>
 
-;;;script_step19.js;;;
+<p>Change your <code>rows</code> declaration to be an array with the strings <code>"Naomi"</code>, <code>"Quincy"</code>, and <code>"CamperChan"</code>. The order of values in an array is important, so follow that order. Remember that strings are case-sensitive.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step19.js](./pyramidGenerator_step19.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step20:
 
-Step20 description
 
-**Source file link:** [script_step20.js](./script_step20.js)
+<p>You can access the values inside an array using the <dfn>index</dfn> of the value. An index is a number representing the position of the value in the array, starting from <code>0</code> for the first value.</p>
 
-;;;script_step20.js;;;
+<p>You can access the value using <dfn>bracket notation</dfn>, such as <code>array[0]</code>.</p>
+
+<p>Use <code>console.log</code> and bracket notation to print the first value in your <code>rows</code> array.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step20.js](./pyramidGenerator_step20.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step21:
 
-Step21 description
 
-**Source file link:** [script_step21.js](./script_step21.js)
+<p>Arrays are special in that they are considered <dfn>mutable</dfn>. This means you can change the value at an index directly.</p>
 
-;;;script_step21.js;;;
+<p>For example, this code would assign the number <code>25</code> to the second element in the array:</p>
+
+<p>Update the <strong>third</strong> element of your <code>rows</code> array to be the number <code>10</code>. Then print the <code>rows</code> array to your console.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step21.js](./pyramidGenerator_step21.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step22:
 
-Step22 description
 
-**Source file link:** [script_step22.js](./script_step22.js)
+<p>Notice how the value inside your <code>rows</code> array has been changed directly? This is called <dfn>mutation</dfn>. As you learn more about arrays, you will learn when to mutate an array, and when you should not.</p>
 
-;;;script_step22.js;;;
+<p>Before moving on, this is a great opportunity to learn a common array use. Currently, your code accesses the last element in the array with <code>rows[2]</code>. But you may not know how many elements are in an array when you want the last one.</p>
+
+<p>You can make use of the <code>.length</code> property of an array - this returns the number of elements in the array. To get the last element of any array, you can use the following syntax:</p>
+
+<p><code>array.length</code> returns the number of elements in the array. By subtracting <code>1</code>, you get the index of the last element in the array. You can apply this same concept to your <code>rows</code> array.</p>
+
+<p>Update your <code>rows[2]</code> to dynamically access the last element in the <code>rows</code> array. Refer to the example above to help you.</p>
+
+<p>You should not see anything change in your console.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step22.js](./pyramidGenerator_step22.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step23:
 
-Step23 description
 
-**Source file link:** [script_step23.js](./script_step23.js)
+<p>For now, remove your first console log and your <code>rows[rows.length - 1]</code> assignment. Leave the second <code>rows</code> log statement for later.</p>
 
-;;;script_step23.js;;;
+
+
+**Source file link:** [pyramidGenerator_step23.js](./pyramidGenerator_step23.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step24:
 
-Step24 description
 
-**Source file link:** [script_step24.js](./script_step24.js)
+<p>In the last few steps, you learned all about working with arrays. Take a moment to review what you have learned.</p>
 
-;;;script_step24.js;;;
+<p>Start by declaring a <code>cities</code> variable and initializing it as an array of the strings <code>"London"</code>, <code>"New York"</code>, and <code>"Mumbai"</code>. Then log that variable to the console.</p>
+
+<p>After logging, change the last element of <code>cities</code> to the string <code>"Mexico City"</code>, then log the <code>cities</code> variable again.</p>
+
+<p>When done correctly, you should see this output in the console.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step24.js](./pyramidGenerator_step24.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step25:
 
-Step25 description
 
-**Source file link:** [script_step25.js](./script_step25.js)
+<p>Now you are ready to move onto the next set of array lessons.</p>
 
-;;;script_step25.js;;;
+<p>Remove all of your code from the previous step.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step25.js](./pyramidGenerator_step25.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step26:
 
-Step26 description
 
-**Source file link:** [script_step26.js](./script_step26.js)
+<p>A <dfn>method</dfn> in JavaScript is a function that's associated with certain values or objects. An example you've already encountered is the <code>.log()</code> method, which is part of the <code>console</code> object.</p>
 
-;;;script_step26.js;;;
+<p>Arrays have their own methods, and the first you will explore is the <code>.push()</code> method. This allows you to "push" a value to the end of an array. Here is an example to add the number <code>12</code> to the end of an array:</p>
+
+<p>Use <code>.push()</code> to add the string <code>"freeCodeCamp"</code> to the end of your <code>rows</code> array. Add this code before your <code>console.log</code> so you can see the change you made to your array.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step26.js](./pyramidGenerator_step26.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step27:
 
-Step27 description
 
-**Source file link:** [script_step27.js](./script_step27.js)
+<p>Another method essential for this project is the <code>.pop()</code> method. It removes the last element from an array and <dfn>returns</dfn> that element.</p>
 
-;;;script_step27.js;;;
+<p>When a method returns a value, you can think of it as giving the value back to you, making it available for use in other parts of your code.</p>
+
+<p>Create a new variable called <code>popped</code> and assign it the result of <code>rows.pop()</code>. Then, log <code>popped</code> to the console.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step27.js](./pyramidGenerator_step27.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step28:
 
-Step28 description
 
-**Source file link:** [script_step28.js](./script_step28.js)
+<p>You should have seen <code>"freeCodeCamp"</code> printed to the console. This is because <code>.pop()</code> returns the value that was removed from the array - and you pushed <code>"freeCodeCamp"</code> to the end of the array earlier.</p>
 
-;;;script_step28.js;;;
+<p>But what does <code>.push()</code> return? Assign your existing <code>rows.push()</code> to a new <code>pushed</code> variable, and log it.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step28.js](./pyramidGenerator_step28.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step29:
 
-Step29 description
 
-**Source file link:** [script_step29.js](./script_step29.js)
+<p>Were you expecting to see <code>4</code> in the console? <code>.push()</code> returns the new length of the array, after adding the value you give it.</p>
 
-;;;script_step29.js;;;
+<p>It is important to be aware of what values a method returns. Take some time to experiment with <code>.push()</code> and <code>.pop()</code>. When you are ready, remove all of your <code>.push()</code> and <code>.pop()</code> calls, and your <code>console.log</code> statements.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step29.js](./pyramidGenerator_step29.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step30:
 
-Step30 description
 
-**Source file link:** [script_step30.js](./script_step30.js)
+<p>Change your <code>rows</code> declaration to be assigned an empty array again.</p>
 
-;;;script_step30.js;;;
+<p>Also, change your <code>'Hello'</code> string to use double quotes again. Generally, it does not matter which of the two you prefer, but you will want to be consistent in that choice throughout your project.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step30.js](./pyramidGenerator_step30.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step31:
 
-Step31 description
 
-**Source file link:** [script_step31.js](./script_step31.js)
+<p>Declaring a variable with the <code>let</code> keyword allows it to be reassigned. This means you could change <code>character</code> later to be a completely different value.</p>
 
-;;;script_step31.js;;;
+<p>For this project, you will not want to change these variable values. So instead, you should use <code>const</code> to declare them. <code>const</code> variables are special.</p>
+
+<p>First, a <code>const</code> variable cannot be reassigned like a <code>let</code> variable. This code would throw an error:</p>
+
+<p>A <code>const</code> variable also cannot be uninitialized. This code would throw an error:</p>
+
+<p>Replace your <code>let</code> keywords with <code>const</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step31.js](./pyramidGenerator_step31.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step32:
 
-Step32 description
 
-**Source file link:** [script_step32.js](./script_step32.js)
+<p>You are now ready to start building your pyramid generator. Your <code>character</code> variable will serve as the building block for the pyramid.</p>
 
-;;;script_step32.js;;;
+<p><code>"Hello"</code> might not work very well for that. Change the value of <code>character</code> to be the hash character <code>"#"</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step32.js](./pyramidGenerator_step32.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step33:
 
-Step33 description
 
-**Source file link:** [script_step33.js](./script_step33.js)
+<p>To generate a pyramid, you will need to create multiple rows. When you have to perform a task repeatedly until a condition is met, you will use a <dfn>loop</dfn>. There are many ways to write a loop.</p>
 
-;;;script_step33.js;;;
+<p>You are going to start with a basic <code>for</code> loop. <code>for</code> loops use the following syntax:</p>
+
+<p>In the upcoming steps, you'll explore each component of a loop in detail. For now, construct a <code>for</code> loop that includes the terms <code>"iterator"</code>, <code>"condition"</code>, and <code>"iteration"</code> for the three components. Keep the loop <dfn>body</dfn>, the section within the curly braces <code>{}</code>, empty.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step33.js](./pyramidGenerator_step33.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step34:
 
-Step34 description
 
-**Source file link:** [script_step34.js](./script_step34.js)
+<p>Your loop now needs a proper iterator. The <dfn>iterator</dfn> is a variable you can declare specifically in your <code>for</code> loop to control how the loop iterates or goes through your logic.</p>
 
-;;;script_step34.js;;;
+<p>It is a common convention to use <code>i</code> as your iterator variable in a loop. A <code>for</code> loop allows you to declare this in the parentheses <code>()</code>. For example, here is a <code>for</code> loop that declares an <code>index</code> variable and assigns it the value <code>100</code>.</p>
+
+<p>Replace the string <code>"iterator"</code> with a <code>let</code> declaration for the variable <code>i</code>. Assign it the value <code>0</code> to start. This will give the <code>i</code> variable the value <code>0</code> the <strong>first time</strong> your loop runs.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step34.js](./pyramidGenerator_step34.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step35:
 
-Step35 description
 
-**Source file link:** [script_step35.js](./script_step35.js)
+<p>The <dfn>condition</dfn> of a <code>for</code> loop tells the loop how many times it should iterate. When the <code>condition</code> becomes false, the loop will stop.</p>
 
-;;;script_step35.js;;;
+<p>In JavaScript, a Boolean value can be either <code>true</code> or <code>false</code>. These are not strings - you will learn more about the difference later on.</p>
+
+<p>For now, you will use the <dfn>less than</dfn> operator (<code>&lt;</code>). This allows you to check if the value on the left is less than the value on the right. For example, <code>count &lt; 3</code> would evaluate to <code>true</code> if <code>count</code> is <code>2</code>, and <code>false</code> if <code>count</code> is <code>4</code>.</p>
+
+<p>Replace your <code>"condition"</code> string with a condition to check if <code>i</code> is less than <code>count</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step35.js](./pyramidGenerator_step35.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step36:
 
-Step36 description
 
-**Source file link:** [script_step36.js](./script_step36.js)
+<p>Your <dfn>iteration</dfn> statement will tell your loop what to do with the iterator after each run.</p>
 
-;;;script_step36.js;;;
+<p>When you reassign a variable, you can use the variable to reference the previous value before the reassignment. This allows you to do things like add three to an existing number. For example, <code>bees = bees + 3;</code> would increase the value of <code>bees</code> by three.</p>
+
+<p>Use that syntax to replace your <code>"iteration"</code> string with a reassignment statement that increases <code>i</code> by one.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step36.js](./pyramidGenerator_step36.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step37:
 
-Step37 description
 
-**Source file link:** [script_step37.js](./script_step37.js)
+<p>Your loop should now run eight times. Inside the body of the loop, print the value of the <code>i</code> iterator and see what happens.</p>
 
-;;;script_step37.js;;;
+
+
+**Source file link:** [pyramidGenerator_step37.js](./pyramidGenerator_step37.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step38:
 
-Step38 description
 
-**Source file link:** [script_step38.js](./script_step38.js)
+<p>You should see the numbers zero through seven printed in your console, one per line. This will serve as the foundation for generating your pyramid.</p>
 
-;;;script_step38.js;;;
+<p>Replace your log statement with a statement to push <code>i</code> to your <code>rows</code> array.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step38.js](./pyramidGenerator_step38.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step39:
 
-Step39 description
 
-**Source file link:** [script_step39.js](./script_step39.js)
+<p>Unfortunately, now you cannot see what your loop is doing.</p>
 
-;;;script_step39.js;;;
+<p>Use <code>let</code> to declare a <code>result</code> variable, and assign it an empty string. An empty string is represented by quotation marks with nothing between them, such as <code>""</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step39.js](./pyramidGenerator_step39.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step40:
 
-Step40 description
 
-**Source file link:** [script_step40.js](./script_step40.js)
+<p>Add a log statement to print the value of <code>result</code>. Depending on which console you use, you may not see anything printed.</p>
 
-;;;script_step40.js;;;
+
+
+**Source file link:** [pyramidGenerator_step40.js](./pyramidGenerator_step40.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step41:
 
-Step41 description
 
-**Source file link:** [script_step41.js](./script_step41.js)
+<p>To manipulate the <code>result</code> string, you will use a different type of loop. Specifically, a <code>for...of</code> loop, which iterates over each item in an iterable object and temporarily assigns it to a variable.</p>
 
-;;;script_step41.js;;;
+<p>The syntax for a <code>for...of</code> loop looks like:</p>
+
+<p>Note that you can use <code>const</code> because the variable only exists for a single iteration, not during the entire loop.</p>
+
+<p>Create a <code>for...of</code> loop to iterate through your <code>rows</code> array, assigning each value to a <code>row</code> variable.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step41.js](./pyramidGenerator_step41.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step42:
 
-Step42 description
 
-**Source file link:** [script_step42.js](./script_step42.js)
+<p>Remember in your previous loop that you used the addition operator <code>+</code> to increase the value of <code>i</code> by <code>1</code>.</p>
 
-;;;script_step42.js;;;
+<p>You can do a similar thing with a string value, by appending a new string to an existing string. For example, <code>hello = hello + " World";</code> would add the string <code>" World"</code> to the existing string stored in the <code>hello</code> variable. This is called <dfn>concatenation</dfn>.</p>
+
+<p>In your <code>for...of</code> loop, use the addition operator to concatenate the <code>row</code> value to the <code>result</code> value.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step42.js](./pyramidGenerator_step42.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step43:
 
-Step43 description
 
-**Source file link:** [script_step43.js](./script_step43.js)
+<p>Now all of your numbers are appearing on the same line. This will not work for creating a pyramid.</p>
 
-;;;script_step43.js;;;
+<p>You will need to add a new line to each row. However, pressing the return key to insert a line break between quotes in JavaScript will result in a parsing error. Instead, you need to use the special <dfn>escape sequence</dfn> <code>\n</code>, which is interpreted as a new line when the string is logged. For example:</p>
+
+<p>Use a second addition operator to concatenate a new line between the existing <code>result</code> value and the added <code>row</code> value.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step43.js](./pyramidGenerator_step43.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step44:
 
-Step44 description
 
-**Source file link:** [script_step44.js](./script_step44.js)
+<p>Printing numbers won't result in a visually appealing pyramid. Now that you're outputting the formatted content of your <code>rows</code> array, it's time to update your original loop.</p>
 
-;;;script_step44.js;;;
+<p>Instead of pushing <code>i</code> to the array, push the value of your <code>character</code> variable.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step44.js](./pyramidGenerator_step44.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step45:
 
-Step45 description
 
-**Source file link:** [script_step45.js](./script_step45.js)
+<p>Now you have a series of <code>#</code> characters, but the pyramid shape is still missing. Fortunately, the <code>i</code> variable represents the current "row" number in your loop, enabling you to use it for crafting a pyramid-like structure.</p>
 
-;;;script_step45.js;;;
+<p>To achieve this, you will use the <code>.repeat()</code> method available to strings. This method accepts a number as an argument, specifying the number of times to repeat the target string. For example, using <code>.repeat()</code> to generate the string <code>"Code! Code! Code!"</code>:</p>
+
+<p>Use the <code>.repeat()</code> method on your <code>character</code>, and give it <code>i</code> for the number.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step45.js](./pyramidGenerator_step45.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step46:
 
-Step46 description
 
-**Source file link:** [script_step46.js](./script_step46.js)
+<p>You're getting closer! At this point, you're encountering what's known as an <dfn>off-by-one error</dfn>, a frequent problem in zero-based indexing languages like JavaScript.</p>
 
-;;;script_step46.js;;;
+<p>The first index of your <code>rows</code> array is <code>0</code>, which is why you start your <code>for</code> loop with <code>i = 0</code>. But repeating a string zero times results in nothing to print.</p>
+
+<p>To fix this, add <code>1</code> to the value of <code>i</code> in your <code>.repeat()</code> call. Do not assign it back to <code>i</code> like you did in your loop conditions.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step46.js](./pyramidGenerator_step46.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step47:
 
-Step47 description
 
-**Source file link:** [script_step47.js](./script_step47.js)
+<p>The logic for formatting this pyramid is likely going to get complicated, which means it's a great time to extract that code into a function.</p>
 
-;;;script_step47.js;;;
+<p>A <dfn>function</dfn> is a block of code that can be reused throughout your application. Functions are declared with the following syntax:</p>
+
+<p>The <code>function</code> keyword tells JavaScript that the <code>name</code> variable is going to be a function. <code>parameter</code> is a variable that represents a value that is passed into the function when it is used. A function may have as many, or as few, <dfn>parameters</dfn> as you'd like. Like a <code>for</code> loop, the space between the curly braces is the <dfn>function body</dfn>.</p>
+
+<p>Declare a <code>padRow</code> function. Do not create any parameter variables yet. The function body should be empty. Remember that you need to use camel case for your naming convention.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step47.js](./pyramidGenerator_step47.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step48:
 
-Step48 description
 
-**Source file link:** [script_step48.js](./script_step48.js)
+<p>In order to use a function, you need to call it. A <dfn>function call</dfn> tells your application to run the code from the function wherever you choose to call it. The syntax for a function call is the function name followed by parentheses. For example, this code defines and calls a <code>test</code> function.</p>
 
-;;;script_step48.js;;;
+<p>Call your <code>padRow</code> function.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step48.js](./pyramidGenerator_step48.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step49:
 
-Step49 description
 
-**Source file link:** [script_step49.js](./script_step49.js)
+<p>You are calling your <code>padRow</code> function, but not doing anything with that function call. All functions in JavaScript <dfn>return</dfn> a value, meaning they provide the defined result of calling them for you to use elsewhere.</p>
 
-;;;script_step49.js;;;
+<p>To see the result of calling your <code>padRow</code> function, declare a <code>call</code> variable and assign your existing <code>padRow</code> call to that variable.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step49.js](./pyramidGenerator_step49.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step50:
 
-Step50 description
 
-**Source file link:** [script_step50.js](./script_step50.js)
+<p>Now add a log statement to print the value of your <code>call</code> variable.</p>
 
-;;;script_step50.js;;;
+
+
+**Source file link:** [pyramidGenerator_step50.js](./pyramidGenerator_step50.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step51:
 
-Step51 description
 
-**Source file link:** [script_step51.js](./script_step51.js)
+<p>Your <code>call</code> variable has an <code>undefined</code> value, even though you defined it! This is because your <code>padRow</code> function does not currently return a value. By default, functions return <code>undefined</code> as their value.</p>
 
-;;;script_step51.js;;;
+<p>In order to return something else, you need to use the <code>return</code> keyword. Here is an example of a function that returns the string <code>"Functions are cool!"</code>:</p>
+
+<p>Use the <code>return</code> keyword to have your function return the string <code>"Hello!"</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step51.js](./pyramidGenerator_step51.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step52:
 
-Step52 description
 
-**Source file link:** [script_step52.js](./script_step52.js)
+<p>When you have a value that is explicitly written in your code, like the <code>"Hello!"</code> string in your function, it is considered to be <dfn>hard-coded</dfn>. Hard-coding a value inside a function might not make it as reusable as you'd like.</p>
 
-;;;script_step52.js;;;
+<p>Instead, you can define <dfn>parameters</dfn> for the function. Parameters are special variables that are given a value when you call the function, and can be used in your function to dynamically change the result of the function's code.</p>
+
+<p>To add a parameter to your function, you need to add a variable name inside the parentheses. For example, this <code>demo</code> function has a <code>name</code> parameter:</p>
+
+<p><code>name</code> sounds like a useful parameter, so go ahead and add it to your <code>padRow</code> function.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step52.js](./pyramidGenerator_step52.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step53:
 
-Step53 description
 
-**Source file link:** [script_step53.js](./script_step53.js)
+<p>A function does not have to return a hard-coded value. It can return the value stored in a variable. Parameters are special variables for a function, so they can also be returned.</p>
 
-;;;script_step53.js;;;
+<p>Change your <code>padRow</code> function to <code>return</code> the <code>name</code> parameter directly.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step53.js](./pyramidGenerator_step53.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step54:
 
-Step54 description
 
-**Source file link:** [script_step54.js](./script_step54.js)
+<p>If you open your console again, you'll see that your <code>padRow</code> function is returning <code>undefined</code>, even though you defined a return value! This is because parameters need to be given a value when you <strong>call</strong> the function.</p>
 
-;;;script_step54.js;;;
+<p>When you pass a value to a function call, that value is referred to as an <dfn>argument</dfn>. Here is an example of calling a <code>demo</code> function and passing <code>"Naomi"</code> as the argument for the <code>name</code> parameter.</p>
+
+<p>Pass your own name as the argument for the <code>name</code> parameter in your <code>padRow</code> call. Remember that your name is a string, so you'll need to use quotes.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step54.js](./pyramidGenerator_step54.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step55:
 
-Step55 description
 
-**Source file link:** [script_step55.js](./script_step55.js)
+<p>Before moving on, take a moment to review how functions work.</p>
 
-;;;script_step55.js;;;
+<p>Declare a function named <code>addTwoNumbers</code>. This function should take two arguments and return the sum of those two arguments.</p>
+
+<p>Your function should not use hard-coded values. An example of a hard-coded function might be:</p>
+
+<p>This function would return <code>"John Doe"</code> regardless of the arguments passed to the parameters <code>firstName</code>, and <code>lastName</code>, so <code>"John Doe"</code> is considered a hard-coded value.</p>
+
+<p>Declare a <code>sum</code> variable and assign it the value of calling your <code>addTwoNumbers</code> function with <code>5</code> and <code>10</code> as the arguments. Log the <code>sum</code> variable to the console.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step55.js](./pyramidGenerator_step55.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step56:
 
-Step56 description
 
-**Source file link:** [script_step56.js](./script_step56.js)
+<p>With that quick review complete, you should remove your <code>addTwoNumbers</code> function, <code>sum</code> variable, and log statement.</p>
 
-;;;script_step56.js;;;
+
+
+**Source file link:** [pyramidGenerator_step56.js](./pyramidGenerator_step56.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step57:
 
-Step57 description
 
-**Source file link:** [script_step57.js](./script_step57.js)
+<p>Variables in JavaScript are available in a specific <dfn>scope</dfn>. In other words, where a variable is declared determines where in your code it can be used.</p>
 
-;;;script_step57.js;;;
+<p>The first scope is the global scope. Variables that are declared outside of any "block" like a function or <code>for</code> loop are in the <dfn>global scope</dfn>. Your <code>character</code>, <code>count</code>, and <code>rows</code> variables are all in the global scope.</p>
+
+<p>When a variable is in the global scope, a function can access it in its definition. Here is an example of a function using a global <code>title</code> variable:</p>
+
+<p>This example would return <code>"Professor Naomi"</code>. Update your <code>padRow</code> function to return the value of concatenating your <code>character</code> variable to the beginning of the <code>name</code> parameter.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step57.js](./pyramidGenerator_step57.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step58:
 
-Step58 description
 
-**Source file link:** [script_step58.js](./script_step58.js)
+<p>Variables can also be declared inside a function. These variables are considered to be in the <dfn>local scope</dfn>, or <dfn>block scope</dfn>. A variable declared inside a function can only be used inside that function. If you try to access it outside of the function, you get a reference error.</p>
 
-;;;script_step58.js;;;
+<p>To see this in action, use <code>const</code> to declare a <code>test</code> variable in your <code>padRow</code> function. Initialise it with the value <code>"Testing"</code>.</p>
+
+<p>Then, below your function, try to log <code>test</code> to the console. You will see an error because it is not defined outside of the function's local scope. Remove that <code>console.log</code> to pass the tests and continue.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step58.js](./pyramidGenerator_step58.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step59:
 
-Step59 description
 
-**Source file link:** [script_step59.js](./script_step59.js)
+<p>Values returned out of a function are used by calling the function. You can use the function call directly as the value it returns, or capture the returned value in a variable. This way, you can use the value assigned to a locally scoped variable, outside the function it was created in.</p>
 
-;;;script_step59.js;;;
+<p>To use your <code>"Testing"</code> value, return it out of the <code>padRow</code> function by updating your <code>return</code> statement to return only the <code>test</code> variable.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step59.js](./pyramidGenerator_step59.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step60:
 
-Step60 description
 
-**Source file link:** [script_step60.js](./script_step60.js)
+<p>Below the <code>return</code> statement, log the string <code>"This works!"</code> to the console.</p>
 
-;;;script_step60.js;;;
+<p>After doing that, you will see that the string <code>"This works!"</code> does not display in the console, and the <code>console.log("This works!")</code> line is greyed out.</p>
+
+<p>Copy the console log and paste it above the <code>return</code> statement. Now, the string <code>"This works!"</code> should appear in the console.</p>
+
+<p>An important thing to know about the <code>return</code> keyword is that it does not just define a value to be returned from your function, it also stops the execution of your code inside a function or a block statement. This means any code after a <code>return</code> statement will not run.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step60.js](./pyramidGenerator_step60.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step61:
 
-Step61 description
 
-**Source file link:** [script_step61.js](./script_step61.js)
+<p>Now your <code>call</code> variable has the value <code>"Testing"</code>. But your function is no longer using the <code>name</code> parameter.</p>
 
-;;;script_step61.js;;;
+<p>Remove the <code>name</code> parameter from your function declaration, then remove your <code>"CamperChan"</code> string from the <code>padRow</code> call.</p>
+
+<p>Also, remove both <code>console.log</code> from the <code>padRow</code> function.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step61.js](./pyramidGenerator_step61.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step62:
 
-Step62 description
 
-**Source file link:** [script_step62.js](./script_step62.js)
+<p>Because your function was no longer using the parameter, changing the argument did not affect it.</p>
 
-;;;script_step62.js;;;
+<p>Go ahead and remove the <code>test</code> declaration and <code>return</code> statement from your <code>padRow</code> function, so the function is empty again.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step62.js](./pyramidGenerator_step62.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step63:
 
-Step63 description
 
-**Source file link:** [script_step63.js](./script_step63.js)
+<p>As expected, your function now returns <code>undefined</code> again. Your <code>call</code> variable is not necessary any more, so remove the <code>call</code> declaration and the <code>console.log</code> for the <code>call</code> variable.</p>
 
-;;;script_step63.js;;;
+
+
+**Source file link:** [pyramidGenerator_step63.js](./pyramidGenerator_step63.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step64:
 
-Step64 description
 
-**Source file link:** [script_step64.js](./script_step64.js)
+<p>In order to know how to format a row, your <code>padRow</code> function will need to know which row number you are on, and how many rows in total are being generated.</p>
 
-;;;script_step64.js;;;
+<p>The best way to do this is by creating function parameters for them. Give your <code>padRow</code> function a <code>rowNumber</code> and <code>rowCount</code> parameter. Multiple parameters are separated by a comma:</p>
+
+
+
+**Source file link:** [pyramidGenerator_step64.js](./pyramidGenerator_step64.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step65:
 
-Step65 description
 
-**Source file link:** [script_step65.js](./script_step65.js)
+<p>Remember in an earlier step, you learned about return values. A function can <dfn>return</dfn> a value for your application to consume separately.</p>
 
-;;;script_step65.js;;;
+<p>In a function, the <code>return</code> keyword is used to specify a return value. For example, this function would return the value given to the first parameter:</p>
+
+<p>Use the <code>return</code> keyword to return the value of the <code>character</code> variable, repeated <code>rowNumber</code> times.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step65.js](./pyramidGenerator_step65.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step66:
 
-Step66 description
 
-**Source file link:** [script_step66.js](./script_step66.js)
+<p>A <dfn>function call</dfn> allows you to actually use a function. You may not have been aware of it, but the methods like <code>.push()</code> that you have been using have been function calls.</p>
 
-;;;script_step66.js;;;
+<p>A function is called by referencing the function's name, and adding <code>()</code>. Here's how to call a <code>test</code> function:</p>
+
+<p>Replace the <code>character.repeat(i + 1)</code> in your <code>.push()</code> call with a function call for your <code>padRow</code> function.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step66.js](./pyramidGenerator_step66.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step67:
 
-Step67 description
 
-**Source file link:** [script_step67.js](./script_step67.js)
+<p>Your <code>padRow</code> function has two parameters which you defined. Values are provided to those parameters when a function is called.</p>
 
-;;;script_step67.js;;;
+<p>The values you provide to a function call are referred to as <dfn>arguments</dfn>, and you <dfn>pass</dfn> arguments to a function call. Here's a function call with <code>"Hello"</code> passed as an argument:</p>
+
+<p>Pass <code>i + 1</code> and <code>count</code> as the arguments to your <code>padRow</code> call. Like parameters, arguments are separated by a comma.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step67.js](./pyramidGenerator_step67.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step68:
 
-Step68 description
 
-**Source file link:** [script_step68.js](./script_step68.js)
+<p>You should now see the same bunch of characters in your console. Your <code>padRow</code> function is doing the exact same thing you were doing earlier, but now it's in a reusable section of its own.</p>
 
-;;;script_step68.js;;;
+<p>Use the addition operator to concatenate a single space <code>" "</code> to the beginning and end of your repeated <code>character</code> string.</p>
+
+<p>Remember that you can use the <code>+</code> operator to concatenate strings like this:</p>
+
+
+
+**Source file link:** [pyramidGenerator_step68.js](./pyramidGenerator_step68.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step69:
 
-Step69 description
 
-**Source file link:** [script_step69.js](./script_step69.js)
+<p>Now it is time for a bit of math. Consider a three-row pyramid. If we want it centered, it would look something like:</p>
 
-;;;script_step69.js;;;
+<p>Empty spaces have been replaced with interpuncts, or middle dots, for readability. If you extrapolate the pattern, you can see that the spaces at the beginning and end of a row follow a pattern.</p>
+
+<p>Update your blank space strings to be repeated <code>rowCount - rowNumber</code> times.</p>
+
+<p>Open up the console to see the result.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step69.js](./pyramidGenerator_step69.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step70:
 
-Step70 description
 
-**Source file link:** [script_step70.js](./script_step70.js)
+<p>You can pass full expressions as an argument. The function will receive the result of evaluating that expression. For example, these two function calls would yield the same result:</p>
 
-;;;script_step70.js;;;
+<p>Looking at the pattern again:</p>
+
+<p>Update the <code>character</code> value to be repeated <code>2 * rowNumber - 1</code> times.</p>
+
+<p>Open up the console again to see the updated result.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step70.js](./pyramidGenerator_step70.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step71:
 
-Step71 description
 
-**Source file link:** [script_step71.js](./script_step71.js)
+<p>Your pyramid generator now functions as expected. But this is an excellent opportunity to further explore the code you have written.</p>
 
-;;;script_step71.js;;;
+<p>The addition operator is not the only way to add values to a variable. The <dfn>addition assignment</dfn> operator can be used as shorthand to mean "take the original value of the variable, add this value, and assign the result back to the variable." For example, these two statements would yield the same result:</p>
+
+<p>Update your iterator statement in the <code>for</code> loop to use addition assignment.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step71.js](./pyramidGenerator_step71.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step72:
 
-Step72 description
 
-**Source file link:** [script_step72.js](./script_step72.js)
+<p>Because you are only increasing <code>i</code> by <code>1</code>, you can use the <dfn>increment operator</dfn> <code>++</code>. This operator increases the value of a variable by 1, updating the assignment for that variable. For example, <code>test</code> would become <code>8</code> here:</p>
 
-;;;script_step72.js;;;
+<p>Replace your addition assignment with the increment operator for your loop iteration.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step72.js](./pyramidGenerator_step72.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step73:
 
-Step73 description
 
-**Source file link:** [script_step73.js](./script_step73.js)
+<p>Rather than having to pass <code>i + 1</code> to your <code>padRow</code> call, you could instead start your loop at <code>1</code>. This would allow you to create a one-indexed loop.</p>
 
-;;;script_step73.js;;;
+<p>Update your iterator to start at <code>1</code> instead of <code>0</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step73.js](./pyramidGenerator_step73.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step74:
 
-Step74 description
 
-**Source file link:** [script_step74.js](./script_step74.js)
+<p>The pyramid looks a little funny now. Because you are starting the loop at <code>1</code> instead of <code>0</code>, you do not need to add one to <code>i</code> when you pass it to <code>padRow</code>.</p>
 
-;;;script_step74.js;;;
+<p>Update the first argument of your <code>padRow</code> call to be <code>i</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step74.js](./pyramidGenerator_step74.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step75:
 
-Step75 description
 
-**Source file link:** [script_step75.js](./script_step75.js)
+<p>Unfortunately, now the bottom of the pyramid has disappeared. This is because you have created another <dfn>off-by-one error</dfn>.</p>
 
-;;;script_step75.js;;;
+<p>Your original loop went for <code>i</code> values from <code>0</code> to <code>7</code>, because <code>count</code> is <code>8</code> and your condition requires <code>i</code> to be less than <code>count</code>. Your loop is now running for <code>i</code> values from <code>1</code> to <code>7</code>.</p>
+
+<p>Your loop needs to be updated to run when <code>i</code> is <code>8</code>, too. Looking at your logic, this means your loop should run when <code>i</code> is <dfn>less than or equal to</dfn> <code>count</code>. You can use the less than or equal to operator <code>&lt;=</code> for this.</p>
+
+<p>Update your loop condition to run while <code>i</code> is less than or equal to <code>count</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step75.js](./pyramidGenerator_step75.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step76:
 
-Step76 description
 
-**Source file link:** [script_step76.js](./script_step76.js)
+<p>Comments can be helpful for explaining why your code takes a certain approach, or leaving to-do notes for your future self.</p>
 
-;;;script_step76.js;;;
+<p>In JavaScript, you can use <code>//</code> to leave a single-line comment in your code.</p>
+
+<p>Add a single-line comment above your function to remind yourself to change the code to a different kind of loop.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step76.js](./pyramidGenerator_step76.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step77:
 
-Step77 description
 
-**Source file link:** [script_step77.js](./script_step77.js)
+<p>JavaScript also has support for multi-line comments. A multi-line comment starts with <code>/*</code> and ends with <code>*/</code>.</p>
 
-;;;script_step77.js;;;
+<p>Unlike a single-line comment, a multi-line comment will encapsulate multiple lines.</p>
+
+<p>Use <code>/*</code> and <code>*/</code> to turn your current <code>for</code> loop, including the body, into a multi-line comment.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step77.js](./pyramidGenerator_step77.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step78:
 
-Step78 description
 
-**Source file link:** [script_step78.js](./script_step78.js)
+<p>Your pyramid has disappeared again. That's okay - that is to be expected.</p>
 
-;;;script_step78.js;;;
+<p>Before you create your new loop, you need to learn about <code>if</code> statements. An <dfn><code>if</code> statement</dfn> allows you to run a block of code only when a condition is met. They use the following syntax:</p>
+
+<p>Create an <code>if</code> statement with the boolean <code>true</code> as the condition. In the body, print the string <code>"Condition is true"</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step78.js](./pyramidGenerator_step78.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step79:
 
-Step79 description
 
-**Source file link:** [script_step79.js](./script_step79.js)
+<p>You'll see the string printed in the console, because <code>true</code> is in fact true.</p>
 
-;;;script_step79.js;;;
+<p>Change the condition of your <code>if</code> statement to the boolean <code>false</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step79.js](./pyramidGenerator_step79.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step80:
 
-Step80 description
 
-**Source file link:** [script_step80.js](./script_step80.js)
+<p>Now the string is no longer printing, because <code>false</code> is not <code>true</code>. But what about other values?</p>
 
-;;;script_step80.js;;;
+<p>Try changing the condition to the string <code>"false"</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step80.js](./pyramidGenerator_step80.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step81:
 
-Step81 description
 
-**Source file link:** [script_step81.js](./script_step81.js)
+<p>The text has appeared again! This is because <code>"false"</code> is a string, which when evaluated to a boolean becomes <code>true</code>. This means <code>"false"</code> is a truthy value.</p>
 
-;;;script_step81.js;;;
+<p>A <dfn>truthy value</dfn> is a value that is considered true when evaluated as a boolean. Most of the values you encounter in JavaScript will be truthy.</p>
+
+<p>A <dfn>falsy value</dfn> is the opposite - a value considered false when evaluated as a boolean. JavaScript has a defined list of falsy values. Some of them include <code>false</code>, <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, and <code>NaN</code>.</p>
+
+<p>Try changing your <code>if</code> condition to an empty string <code>""</code>, which is a falsy value.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step81.js](./pyramidGenerator_step81.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step82:
 
-Step82 description
 
-**Source file link:** [script_step82.js](./script_step82.js)
+<p>The text is gone again! Empty strings evaluate to <code>false</code>, making them a <dfn>falsy value</dfn>. You will learn more about truthy and falsy values in future projects.</p>
 
-;;;script_step82.js;;;
+<p>In addition to <code>if</code> statements, JavaScript also has <dfn>else if</dfn> statements. <code>else if</code> statements allow you to check multiple conditions in a single block of code.</p>
+
+<p>Here is the syntax for an <code>else if</code> statement:</p>
+
+<p>If the first condition is <code>false</code>, JavaScript will check the next condition in the chain. If the second condition is <code>false</code>, JavaScript will check the third condition, and so on.</p>
+
+<p>Below your <code>if</code> statement, add an <code>else if</code> statement that checks if <code>5</code> is less than <code>10</code>. Then inside the body of the <code>else if</code> statement, log the string <code>"5 is less than 10"</code> to the console.</p>
+
+<p>Check the console to see the results.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step82.js](./pyramidGenerator_step82.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step83:
 
-Step83 description
 
-**Source file link:** [script_step83.js](./script_step83.js)
+<p>Sometimes you will want to run different code when all of the <code>if...else if</code> conditions are <code>false</code>. You can do this by adding an <code>else</code> block.</p>
 
-;;;script_step83.js;;;
+<p>An <code>else</code> block will only evaluate if the conditions in the <code>if</code> and <code>else if</code> blocks are not met.</p>
+
+<p>Here the <code>else</code> block is added to the <code>else if</code> block.</p>
+
+<p>Add an <code>else</code> block to the <code>else if</code> block. Inside the <code>else</code> block, log the string <code>"This is the else block"</code> to the console.</p>
+
+<p>To see the results in the console, you can manually change the <code>&lt;</code> in the <code>else if</code> statement to <code>&gt;</code>. That will make the condition <code>false</code> and the <code>else</code> block will run.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step83.js](./pyramidGenerator_step83.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step84:
 
-Step84 description
 
-**Source file link:** [script_step84.js](./script_step84.js)
+<p>Now that you have practiced working with <code>if...else if...else</code> statements, you can remove them from your code.</p>
 
-;;;script_step84.js;;;
+<p>Once you complete that, use <code>let</code> to declare a <code>continueLoop</code> variable and assign it the boolean <code>false</code>. Then use <code>let</code> to declare a <code>done</code> variable and assign it the value <code>0</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step84.js](./pyramidGenerator_step84.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step85:
 
-Step85 description
 
-**Source file link:** [script_step85.js](./script_step85.js)
+<p>A <dfn><code>while</code></dfn> loop will run over and over again until the <code>condition</code> specified is no longer true. It has the following syntax:</p>
 
-;;;script_step85.js;;;
+<p>Use that syntax to declare a <code>while</code> loop with <code>continueLoop</code> as the condition. The body should be empty.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step85.js](./pyramidGenerator_step85.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step86:
 
-Step86 description
 
-**Source file link:** [script_step86.js](./script_step86.js)
+<p>Right now, if you change <code>continueLoop</code> to true, your <code>while</code> loop will run forever. This is called an <dfn>infinite loop</dfn>, and you should be careful to avoid these. An infinite loop can lock up your system, requiring a full restart to escape.</p>
 
-;;;script_step86.js;;;
+<p>To avoid this, start by using the increment operator to increase the value of the <code>done</code> variable inside your loop.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step86.js](./pyramidGenerator_step86.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step87:
 
-Step87 description
 
-**Source file link:** [script_step87.js](./script_step87.js)
+<p>The <dfn>equality</dfn> operator <code>==</code> is used to check if two values are equal. To compare two values, you'd use a statement like <code>value == 8</code>.</p>
 
-;;;script_step87.js;;;
+<p>Below <code>done++</code> inside your loop, add an <code>if</code> statement. The statement should check if <code>done</code> is equal to <code>count</code> using the equality operator.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step87.js](./pyramidGenerator_step87.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step88:
 
-Step88 description
 
-**Source file link:** [script_step88.js](./script_step88.js)
+<p>The equality operator can lead to some strange behavior in JavaScript. For example, <code>"0" == 0</code> is true, even though one is a string and one is a number.</p>
 
-;;;script_step88.js;;;
+<p>The <dfn>strict equality</dfn> operator <code>===</code> is used to check if two values are equal and share the same type. As a general rule, this is the equality operator you should always use. With the strict equality operator, <code>"0" === 0</code> becomes false, because while they might have the same value of zero, they are not of the same type.</p>
+
+<p>Update your <code>done == count</code> condition to use the strict equality operator.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step88.js](./pyramidGenerator_step88.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step89:
 
-Step89 description
 
-**Source file link:** [script_step89.js](./script_step89.js)
+<p>When <code>done</code> has reached the value of <code>count</code>, we want the loop to stop executing.</p>
 
-;;;script_step89.js;;;
+<p>Inside your <code>if</code> body, assign the boolean <code>false</code> to your <code>continueLoop</code> variable.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step89.js](./pyramidGenerator_step89.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step90:
 
-Step90 description
 
-**Source file link:** [script_step90.js](./script_step90.js)
+<p>To make your pyramid generate again, push the result of calling <code>padRow</code> with <code>done</code> and <code>count</code> as the arguments to your <code>rows</code> array, similar to what you did in your first loop.</p>
 
-;;;script_step90.js;;;
+
+
+**Source file link:** [pyramidGenerator_step90.js](./pyramidGenerator_step90.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step91:
 
-Step91 description
 
-**Source file link:** [script_step91.js](./script_step91.js)
+<p>The <dfn>strict inequality</dfn> operator <code>!==</code> allows you to check if two values are not equal, or do not have the same type. The syntax is similar to the equality operator: <code>value !== 4</code>.</p>
 
-;;;script_step91.js;;;
+<p>Update your <code>while</code> loop condition to check if <code>done</code> is not equal to <code>count</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step91.js](./pyramidGenerator_step91.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step92:
 
-Step92 description
 
-**Source file link:** [script_step92.js](./script_step92.js)
+<p>Since you have moved the comparison into the <code>while</code> condition, you can remove your entire <code>if</code> statement.</p>
 
-;;;script_step92.js;;;
+
+
+**Source file link:** [pyramidGenerator_step92.js](./pyramidGenerator_step92.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step93:
 
-Step93 description
 
-**Source file link:** [script_step93.js](./script_step93.js)
+<p>Your loop is no longer relying on the <code>continueLoop</code> variable. This makes the variable an <dfn>unused declaration</dfn>. Generally, you want to avoid unused declarations to prevent future confusion.</p>
 
-;;;script_step93.js;;;
+<p>Remove your <code>continueLoop</code> variable.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step93.js](./pyramidGenerator_step93.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step94:
 
-Step94 description
 
-**Source file link:** [script_step94.js](./script_step94.js)
+<p>Your pyramid generator is still working. However, it could be possible to end up with an infinite loop again.</p>
 
-;;;script_step94.js;;;
+<p>Because you are only checking if <code>done</code> is not equal to <code>count</code>, if <code>done</code> were to be <strong>larger</strong> than <code>count</code> your loop would go on forever.</p>
+
+<p>Update your loop's condition to check if <code>done</code> is less than or equal to <code>count</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step94.js](./pyramidGenerator_step94.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step95:
 
-Step95 description
 
-**Source file link:** [script_step95.js](./script_step95.js)
+<p>Using <code>done</code> to track the number of rows that have been generated is functional, but you can actually clean up the logic a bit further.</p>
 
-;;;script_step95.js;;;
+<p>Arrays have a special <code>length</code> property that allows you to see how many values, or <dfn>elements</dfn>, are in the array. You would access this property using syntax like <code>myArray.length</code>.</p>
+
+<p>Note that <code>rows.length</code> in the <code>padRow</code> call would give you an off-by-one error, because <code>done</code> is incremented <em>before</em> the call.</p>
+
+<p>Update your condition to check if <code>rows.length</code> is less than <code>count</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step95.js](./pyramidGenerator_step95.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step96:
 
-Step96 description
 
-**Source file link:** [script_step96.js](./script_step96.js)
+<p>Replace the <code>done</code> reference in your <code>padRow</code> call with <code>rows.length + 1</code>.</p>
 
-;;;script_step96.js;;;
+
+
+**Source file link:** [pyramidGenerator_step96.js](./pyramidGenerator_step96.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step97:
 
-Step97 description
 
-**Source file link:** [script_step97.js](./script_step97.js)
+<p>Now you no longer need your <code>done</code> variable. Remove the increment operation from your loop, and the variable declaration for <code>done</code>.</p>
 
-;;;script_step97.js;;;
+
+
+**Source file link:** [pyramidGenerator_step97.js](./pyramidGenerator_step97.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step98:
 
-Step98 description
 
-**Source file link:** [script_step98.js](./script_step98.js)
+<p>That's a very clean and functional loop. Nice work! But there's still more to explore.</p>
 
-;;;script_step98.js;;;
+<p>Use a multi-line comment to comment out your <code>while</code> loop.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step98.js](./pyramidGenerator_step98.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step99:
 
-Step99 description
 
-**Source file link:** [script_step99.js](./script_step99.js)
+<p>What if you made your pyramid upside-down, or <dfn>inverted</dfn>? Time to try it out!</p>
 
-;;;script_step99.js;;;
+<p>Start by creating a new <code>for</code> loop. Declare your iterator <code>i</code> and assign it the value of <code>count</code>, then use the boolean <code>false</code> for your condition and iteration statements.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step99.js](./pyramidGenerator_step99.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step100:
 
-Step100 description
 
-**Source file link:** [script_step100.js](./script_step100.js)
+<p>Because you are going to loop in the opposite direction, your loop needs to run while <code>i</code> is greater than <code>0</code>. You can use the <dfn>greater than</dfn> operator <code>&gt;</code> for this.</p>
 
-;;;script_step100.js;;;
+<p>Set your loop's condition to run when <code>i</code> is greater than <code>0</code>.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step100.js](./pyramidGenerator_step100.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step101:
 
-Step101 description
 
-**Source file link:** [script_step101.js](./script_step101.js)
+<p>Your iteration statement is also going to be different. Instead of adding <code>1</code> to <code>i</code> with each loop, you need to subtract <code>1</code>.</p>
 
-;;;script_step101.js;;;
+<p>Like you did earlier with <code>i = i + 1</code>, update your iteration statement to give <code>i</code> the value of subtracting <code>1</code> from itself.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step101.js](./pyramidGenerator_step101.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step102:
 
-Step102 description
 
-**Source file link:** [script_step102.js](./script_step102.js)
+<p>Again, push the result of calling <code>padRow</code> with your <code>i</code> and <code>count</code> variables to your <code>rows</code> array.</p>
 
-;;;script_step102.js;;;
+<p>Open up the console to see the upside-down pyramid.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step102.js](./pyramidGenerator_step102.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step103:
 
-Step103 description
 
-**Source file link:** [script_step103.js](./script_step103.js)
+<p>Just like addition, there are different operators you can use for subtraction. The <dfn>subtraction assignment</dfn> operator <code>-=</code> subtracts the given value from the current variable value, then assigns the result back to the variable.</p>
 
-;;;script_step103.js;;;
+<p>Replace your iterator statement with the correct statement using the subtraction assignment operator.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step103.js](./pyramidGenerator_step103.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step104:
 
-Step104 description
 
-**Source file link:** [script_step104.js](./script_step104.js)
+<p>Because you are only subtracting one from <code>i</code>, you can use the <dfn>decrement operator</dfn> <code>--</code>.</p>
 
-;;;script_step104.js;;;
+<p>Replace your subtraction assignment with the decrement operator.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step104.js](./pyramidGenerator_step104.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step105:
 
-Step105 description
 
-**Source file link:** [script_step105.js](./script_step105.js)
+<p>Use a multi-line comment to comment out this loop as well, to prepare for the next approach.</p>
 
-;;;script_step105.js;;;
+
+
+**Source file link:** [pyramidGenerator_step105.js](./pyramidGenerator_step105.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step106:
 
-Step106 description
 
-**Source file link:** [script_step106.js](./script_step106.js)
+<p>You can actually build the inverted pyramid without needing to loop "backwards" like you did.</p>
 
-;;;script_step106.js;;;
+<p>To do this, you'll need to learn a couple of new array methods. Start by using <code>const</code> to declare a <code>numbers</code> variable. Assign it an array with the elements <code>1</code>, <code>2</code>, and <code>3</code>. Then log the <code>numbers</code> array.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step106.js](./pyramidGenerator_step106.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step107:
 
-Step107 description
 
-**Source file link:** [script_step107.js](./script_step107.js)
+<p>The <code>.unshift()</code> method of an array allows you to add a value to the <strong>beginning</strong> of the array, unlike <code>.push()</code> which adds the value at the end of the array. <code>.unshift()</code> returns the new length of the array it was called on.</p>
 
-;;;script_step107.js;;;
+<p>Use <code>const</code> to declare an <code>unshifted</code> variable, and assign it the result of calling <code>.unshift()</code> on your <code>numbers</code> array. Pass <code>5</code> as the argument. Then print your <code>unshifted</code> variable.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step107.js](./pyramidGenerator_step107.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step108:
 
-Step108 description
 
-**Source file link:** [script_step108.js](./script_step108.js)
+<p>Arrays also have a <code>.shift()</code> method. This will remove the <strong>first</strong> element of the array, unlike <code>.pop()</code> which removes the last element. Here is an example of the <code>.shift()</code> method:</p>
 
-;;;script_step108.js;;;
+<p>The <code>numbers</code> array would be <code>[2, 3]</code>.</p>
+
+<p>Directly below your <code>numbers</code> array, declare a <code>shifted</code> variable and assign it the result of calling <code>.shift()</code> on the <code>numbers</code> array. On the next line, log the <code>shifted</code> variable to the console.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step108.js](./pyramidGenerator_step108.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step109:
 
-Step109 description
 
-**Source file link:** [script_step109.js](./script_step109.js)
+<p>Now that you've tried these methods, you can do another inverted pyramid approach. But first you need to clean up your experimentation.</p>
 
-;;;script_step109.js;;;
+<p>Remove your <code>numbers</code> array, and the method calls and log calls.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step109.js](./pyramidGenerator_step109.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step110:
 
-Step110 description
 
-**Source file link:** [script_step110.js](./script_step110.js)
+<p>Sometimes you may wish to bring back previous code that you commented out. You can do so by removing the <code>/*</code> and <code>*/</code> around that code. This is called <dfn>uncommenting</dfn>.</p>
 
-;;;script_step110.js;;;
+<p>Uncomment only your first <code>for</code> loop. Leave the single line comment and the other two multi line comments in place.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step110.js](./pyramidGenerator_step110.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step111:
 
-Step111 description
 
-**Source file link:** [script_step111.js](./script_step111.js)
+<p>Your pyramid is no longer inverted. This is because you are adding new rows to the <strong>end</strong> of the array.</p>
 
-;;;script_step111.js;;;
+<p>Update your loop body to add new rows to the beginning of the array.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step111.js](./pyramidGenerator_step111.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step112:
 
-Step112 description
 
-**Source file link:** [script_step112.js](./script_step112.js)
+<p>What if you had a way to toggle between an inverted pyramid and a standard pyramid?</p>
 
-;;;script_step112.js;;;
+<p>Start by declaring an <code>inverted</code> variable, and assigning it the value <code>true</code>. You are not changing this variable in your code, but you will need to use <code>let</code> so our tests can modify it later.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step112.js](./pyramidGenerator_step112.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step113:
 
-Step113 description
 
-**Source file link:** [script_step113.js](./script_step113.js)
+<p>Use an <code>if</code> statement to check if <code>inverted</code> is true. Remember that you do not need to use an equality operator here.</p>
 
-;;;script_step113.js;;;
+
+
+**Source file link:** [pyramidGenerator_step113.js](./pyramidGenerator_step113.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step114:
 
-Step114 description
 
-**Source file link:** [script_step114.js](./script_step114.js)
+<p>Now move your <code>.unshift()</code> call into your <code>if</code> block.</p>
 
-;;;script_step114.js;;;
+
+
+**Source file link:** [pyramidGenerator_step114.js](./pyramidGenerator_step114.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step115:
 
-Step115 description
 
-**Source file link:** [script_step115.js](./script_step115.js)
+<p>If your pyramid is not inverted, then you will want to have an <code>else</code> block that builds the pyramid in the normal order.</p>
 
-;;;script_step115.js;;;
+<p>In earlier steps, you learned how to work with <code>else</code> statement like this:</p>
+
+<p>Add an <code>else</code> block to your <code>if</code> block.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step115.js](./pyramidGenerator_step115.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step116:
 
-Step116 description
 
-**Source file link:** [script_step116.js](./script_step116.js)
+<p>When <code>inverted</code> is false, you want to build a standard pyramid. Use <code>.push()</code> like you have in previous steps to achieve this.</p>
 
-;;;script_step116.js;;;
+
+
+**Source file link:** [pyramidGenerator_step116.js](./pyramidGenerator_step116.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
+
 
 ## Step117:
 
-Step117 description
 
-**Source file link:** [script_step117.js](./script_step117.js)
+<p>Your pyramid generator is now in a finished state, with more functionality than you originally planned! The next step is to clean up your code.</p>
 
-;;;script_step117.js;;;
+<p>Remove all comments, both single- and multi-line, from your code.</p>
+
+
+
+**Source file link:** [pyramidGenerator_step117.js](./pyramidGenerator_step117.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
 
+
 ## Step118:
 
-Step118 description
 
-**Source file link:** [script_step118.js](./script_step118.js)
+<p>Nice work! Experiment with different values for your <code>character</code>, <code>count</code>, and <code>inverted</code> variables.</p>
 
-;;;script_step118.js;;;
+<p>When you are ready to move on to your next project, set <code>character</code> to <code>"!"</code>, <code>count</code> to <code>10</code>, and <code>inverted</code> to <code>false</code> to continue.</p>
+
+<p>Congratulations on completing your first JavaScript project!</p>
+
+
+
+**Source file link:** [pyramidGenerator_step118.js](./pyramidGenerator_step118.js)
+
+
 
 ### Execution logs: 
 
-```
-
-```
 
 ---
 

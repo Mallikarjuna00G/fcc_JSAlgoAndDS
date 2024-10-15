@@ -4,8 +4,9 @@ Learn and practice JavaScript Algorithms and Data Structures through FreeCodeCam
 
 ## References: 
 
-1. [FreeCodeCamp JS algorithms and Data structures](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/)
-2. Small learning on web scraping using python-selenium: <https://www.scrapingbee.com/blog/selenium-python/>. Had to install `python3-selenium`. Also `BeautifulSoup` is used.
+1. [FreeCodeCamp](https://www.freecodecamp.org)
+2. [FreeCodeCamp JS algorithms and Data structures](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/)
+3. Small learning on web scraping using python-selenium: <https://www.scrapingbee.com/blog/selenium-python/>. Had to install `python3-selenium`. Also `BeautifulSoup` is used.
 
 
 ## Environment Setup:
@@ -21,4 +22,4 @@ The idea is to generate the project specific README.md file using project specif
 Command used will be of the format: `node <scriptName>`. Currently using Node.js version v18.19.0. Node.js can be obtained from <https://nodejs.org/en>.
 
 ## Topics
-1. Learn Introductory JavaScript by Building a Pyramid Generator: [pyramidGenerator](./pyramidGenerator/) 
+1. Learn Introductory JavaScript by Building a Pyramid Generator: [pyramidGenerator](./pyramidGenerator/)

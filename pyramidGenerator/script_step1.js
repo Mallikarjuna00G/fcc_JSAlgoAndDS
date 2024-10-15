@@ -1,1 +1,0 @@
-console.log("Let's build a pyramid using Javascript basics:");
