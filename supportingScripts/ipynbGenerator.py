@@ -115,11 +115,12 @@ for i in range(1, number_of_steps + 1):
     cell = nbformat.NotebookNode(cell_type='code', metadata={}, outputs=[], execution_count=0, source=["code = \"\"\n", f"fileName = \"{srcFileName}\"\n", "\n", "with open(fileName, \"r\") as file:", "\tcode = file.read()", "\n", "display(Markdown(f\"\"\"```js\n{code}\n```\"\"\"))"])
     jnb['cells'].append(cell)
 
+    cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"### Execution logs: ", "\n"])
+    jnb['cells'].append(cell)
+    
     cell = nbformat.NotebookNode(cell_type='code', metadata={}, outputs=[], execution_count=0, source=[f"!node {srcFileName}"])
     jnb['cells'].append(cell)
 
-    cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"### Execution logs: ", "\n"])
-    jnb['cells'].append(cell)
 
     cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"---", "\n"])
     jnb['cells'].append(cell)
