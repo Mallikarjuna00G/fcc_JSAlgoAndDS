@@ -2,18 +2,22 @@
 
 JavaScript is a powerful scripting language that you can use to make web pages interactive. It's one of the core technologies of the web, along with HTML and CSS. All modern browsers support JavaScript.
 
-In this practice project, you'll learn fundamental programming concepts in JavaScript by coding your own Pyramid Generator. You'll learn how to work with arrays, strings, functions, loops, if/else statements, and more.
+In this practice project, you'll learn fundamental programming concepts in JavaScript by coding your own Pyramid Generator. You'll learn how to work with arrays, strings, functions, loops, `if`/`else` statements, and more.
 
 ## Step1:
+
 
 
 <p>JavaScript is the programming language that powers the web. Unlike the HTML and CSS you have learned previously, JavaScript is most commonly used to write logic instead of markup.</p>
 
 <p>In this project, you will learn the basics of Javascript and apply those concepts to building a pyramid generator.</p>
 
-<p>A pyramid generator is a program where you can set the type of character, the count for the pyramid, and the direction of the pyramid. The program will then generate a pyramid based on those inputs.</p>
-
-<p>Click on the "Check your code" button to proceed to the next step and start the project.</p>
+A pyramid generator is a program where you can set the 
+- type of character, 
+- the count for the pyramid, and 
+- the direction of the pyramid. 
+ 
+The program will then generate a pyramid based on those inputs.
 
 
 
@@ -21,20 +25,54 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+console.log("Let's build a pyramid using Javascript basics");
+console.log("#########");
+console.log(" ####### ");
+console.log("  #####  ");
+console.log("   ###   ");
+console.log("    #    ");
+
+```
+
+
 ### Execution logs: 
+
+
+
+    Let's build a pyramid using Javascript basics
+    #########
+     ####### 
+      #####  
+       ###   
+        #    
 
 
 ---
 
 
+
 ## Step2:
+
 
 
 <p>One of the most important concepts in programming is variables. A <dfn>variable</dfn> points to a specific memory address that stores a value. Variables are given a name which can be used throughout your code to access that value.</p>
 
 <p>Declaring a variable means giving it a name. In JavaScript, this is often done with the <code>let</code> keyword. For example, here is how you would declare a <code>hello</code> variable:</p>
 
-<p>Variable naming follows specific rules: names can include letters, numbers, dollar signs, and underscores, but cannot contain spaces and must not begin with a number.</p>
+Variable naming follows specific rules: 
+
+names can include 
+- letters, 
+- numbers, 
+- dollar signs, and 
+- underscores, 
+ 
+but cannot contain 
+- spaces and 
+- must not begin with a number.
 
 <p>Use the <code>let</code> keyword to declare a variable called <code>character</code>.</p>
 
@@ -46,13 +84,23 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let hello;
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step3:
+
 
 
 <p>Your <code>character</code> variable currently does not have a value. You can assign a value using the <dfn>assignment</dfn> operator <code>=</code>. For example:</p>
@@ -67,13 +115,23 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step4:
+
 
 
 <p>JavaScript has seven primitive data types, with String being one of them. In JavaScript, a <dfn>string</dfn> represents a sequence of characters and can be enclosed in either single (<code>'</code>) or double (<code>"</code>) quotes.</p>
@@ -88,20 +146,37 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = 'Hello';
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step5:
+
 
 
 <p>The <dfn>console</dfn> allows you to print and view JavaScript output. You can send information to the console using <code>console.log()</code>. For example, this code will print <code>"Naomi"</code> to the console:</p>
 
+**Example Code:**
+
+```js
+let developer = "Naomi";
+console.log(developer);
+```
+
 <p>The code above accesses the <code>developer</code> variable with its name in the <code>console.log()</code>. Note that the value between the parentheses is the value that will be printed.</p>
 
-<p>Print the value of the <code>character</code> variable to the console. Then, click the "Console" button to view the JavaScript console.</p>
+<p>Print the value of the <code>character</code> variable to the console.</p>
 
 
 
@@ -109,16 +184,38 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = 'Hello';
+console.log(character);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    Hello
 
 
 ---
 
 
+
 ## Step6:
 
 
+
 <p>When a variable is declared with the <code>let</code> keyword, you can <dfn>reassign</dfn> (or change the value of) that variable later on. In this example, the value of <code>programmer</code> is changed from <code>"Naomi"</code> to <code>"CamperChan"</code>.</p>
+
+**Example code:**
+
+```js
+let programmer = "Naomi";
+programmer = "CamperChan";
+```
 
 <p>Note that when reassigning a variable, you do <strong>not</strong> use the <code>let</code> keyword again.</p>
 
@@ -130,13 +227,28 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = 'Hello';
+console.log(character);
+character = "World";
+```
+
+
 ### Execution logs: 
+
+
+
+    Hello
 
 
 ---
 
 
+
 ## Step7:
+
 
 
 <p>Now log your <code>character</code> variable to the console again. You should see the string <code>"Hello"</code>, then the string <code>"World"</code>, in the console.</p>
@@ -147,18 +259,45 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = 'Hello';
+console.log(character);
+character = "World";
+console.log(character);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    Hello
+    World
 
 
 ---
 
 
+
 ## Step8:
+
 
 
 <p>When variable names are more than one word, there are specific naming conventions for how you capitalize the words. In JavaScript, the convention to use is <dfn>camel case</dfn>.</p>
 
 <p>Camel case means that the first word in the name is entirely lowercase, but the following words are all title-cased. Here are some examples of camel case:</p>
+
+**Example Code**
+
+```js
+let variableOne;
+let secondVariable;
+let yetAnotherVariable;
+let thisIsAnAbsurdlyLongName;
+```
 
 <p>Use camel case to declare a new <code>secondCharacter</code> variable.</p>
 
@@ -168,13 +307,31 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = 'Hello';
+console.log(character);
+character = "World";
+console.log(character);
+let secondCharacter;
+```
+
+
 ### Execution logs: 
+
+
+
+    Hello
+    World
 
 
 ---
 
 
+
 ## Step9:
+
 
 
 <p>When you declare a variable without initializing it, it is considered <dfn>uninitialized</dfn>. Currently, your <code>secondCharacter</code> variable is uninitialized.</p>
@@ -187,18 +344,44 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = 'Hello';
+console.log(character);
+character = "World";
+let secondCharacter;
+console.log(secondCharacter);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    Hello
+    [90mundefined[39m
 
 
 ---
 
 
+
 ## Step10:
+
 
 
 <p>The default value of an uninitialized variable is <code>undefined</code>. This is a special data type that represents a value that does not have a definition yet.</p>
 
 <p>You can still assign a value to an uninitialized variable. Here is an example:</p>
+
+**Example Code**
+
+```js
+let uninitialized;
+uninitialized = "assigned";
+```
 
 <p>Assign the string <code>"Test"</code> to your <code>secondCharacter</code> variable below your declaration. Open the console to see how your log has changed.</p>
 
@@ -208,22 +391,47 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = 'Hello';
+console.log(character);
+character = "World";
+let secondCharacter;
+secondCharacter = "Test";
+console.log(secondCharacter);
+```
+
+
 ### Execution logs: 
+
+
+
+    Hello
+    Test
 
 
 ---
 
 
+
 ## Step11:
+
 
 
 <p>You can also assign the value of a variable to another variable. For example:</p>
 
+**Example Code**
+
+```js
+let first = "One";
+let second = "Two";
+second = first;
+```
+
 <p>The <code>second</code> variable would now have the value <code>"One"</code>.</p>
 
 <p>To see this in action, change your <code>secondCharacter</code> assignment from <code>"Test"</code> to your <code>character</code> variable.</p>
-
-<p>Then open the console to see what gets logged.</p>
 
 
 
@@ -231,13 +439,32 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = 'Hello';
+console.log(character);
+character = "World";
+let secondCharacter;
+secondCharacter = character;
+console.log(secondCharacter);
+```
+
+
 ### Execution logs: 
+
+
+
+    Hello
+    World
 
 
 ---
 
 
+
 ## Step12:
+
 
 
 <p>You are now ready to declare your next variable. Remove both <code>console.log</code> statements, and the <code>character</code> reassignment.</p>
@@ -250,13 +477,23 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = 'Hello';
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step13:
+
 
 
 <p>Before moving forward, you should take a moment to review the concepts you have learned.</p>
@@ -271,13 +508,34 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let profession = "teacher"
+let age;
+
+console.log(profession);
+console.log(age);
+
+
+```
+
+
 ### Execution logs: 
+
+
+
+    teacher
+    [90mundefined[39m
 
 
 ---
 
 
+
 ## Step14:
+
 
 
 <p>Now that you have reviewed declaration and initialization, remove the code you wrote for your review.</p>
@@ -290,16 +548,32 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step15:
 
 
+
 <p>Use <code>let</code> to declare a <code>count</code> variable. Assign it the <dfn>number</dfn> <code>8</code>. When using a number value, you do not use quotes. For example:</p>
+
+**Example Code**
+
+```jc
+let money = 100;
+```
 
 
 
@@ -307,13 +581,24 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step16:
+
 
 
 <p>With the <code>number</code> data type, you can perform mathematical operations, like addition. Try printing <code>count + 1</code> to the console.</p>
@@ -324,13 +609,29 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+console.log(count + 1);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    [33m9[39m
 
 
 ---
 
 
+
 ## Step17:
+
 
 
 <p>You can also perform subtraction (<code>-</code>), multiplication (<code>*</code>), and division (<code>/</code>). Feel free to experiment with the operators and numbers in your <code>console.log</code>. When you are ready to move on, remove the <code>console.log</code>.</p>
@@ -341,13 +642,25 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step18:
+
 
 
 <p>In programming, you will often need to work with lots of data. There are many data structures that can help you organize and manage your data. One of the most basic data structures is an <dfn>array</dfn>.</p>
@@ -355,6 +668,12 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 <p>An <dfn>array</dfn> is a non-primitive data type that can hold a series of values. Non-primitive data types differ from primitive data types in that they can hold more complex data. Primitive data types like strings and numbers can only hold one value at a time.</p>
 
 <p>Arrays are denoted using square brackets (<code>[]</code>). Here is an example of a variable with the value of an empty array:</p>
+
+**Example Code**
+
+```js
+let array = [];
+```
 
 <p>Declare a <code>rows</code> variable and assign it an empty array.</p>
 
@@ -364,16 +683,34 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = [];
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step19:
 
 
+
 <p>When an array holds values, or <dfn>elements</dfn>, those values are separated by commas. Here is an array that holds two strings:</p>
+
+**Example Code**
+
+```js
+let array = ["first", "second"]
+```
 
 <p>Change your <code>rows</code> declaration to be an array with the strings <code>"Naomi"</code>, <code>"Quincy"</code>, and <code>"CamperChan"</code>. The order of values in an array is important, so follow that order. Remember that strings are case-sensitive.</p>
 
@@ -383,13 +720,25 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step20:
+
 
 
 <p>You can access the values inside an array using the <dfn>index</dfn> of the value. An index is a number representing the position of the value in the array, starting from <code>0</code> for the first value.</p>
@@ -404,18 +753,43 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+console.log(rows[0]);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    Naomi
 
 
 ---
 
 
+
 ## Step21:
+
 
 
 <p>Arrays are special in that they are considered <dfn>mutable</dfn>. This means you can change the value at an index directly.</p>
 
 <p>For example, this code would assign the number <code>25</code> to the second element in the array:</p>
+
+**Example Code**
+
+```js
+let array = [1, 2, 3];
+array[1] = 25;
+console.log(array); // prints [1, 25, 3]
+```
 
 <p>Update the <strong>third</strong> element of your <code>rows</code> array to be the number <code>10</code>. Then print the <code>rows</code> array to your console.</p>
 
@@ -425,13 +799,33 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+console.log(rows[0]);
+rows[2] = 10;
+console.log(rows);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    Naomi
+    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [33m10[39m ]
 
 
 ---
 
 
+
 ## Step22:
+
 
 
 <p>Notice how the value inside your <code>rows</code> array has been changed directly? This is called <dfn>mutation</dfn>. As you learn more about arrays, you will learn when to mutate an array, and when you should not.</p>
@@ -439,6 +833,12 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 <p>Before moving on, this is a great opportunity to learn a common array use. Currently, your code accesses the last element in the array with <code>rows[2]</code>. But you may not know how many elements are in an array when you want the last one.</p>
 
 <p>You can make use of the <code>.length</code> property of an array - this returns the number of elements in the array. To get the last element of any array, you can use the following syntax:</p>
+
+**Example Code**
+
+```js
+array[array.length - 1]
+```
 
 <p><code>array.length</code> returns the number of elements in the array. By subtracting <code>1</code>, you get the index of the last element in the array. You can apply this same concept to your <code>rows</code> array.</p>
 
@@ -452,13 +852,33 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+console.log(rows[0]);
+rows[rows.length - 1] = 10;
+console.log(rows);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    Naomi
+    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [33m10[39m ]
 
 
 ---
 
 
+
 ## Step23:
+
 
 
 <p>For now, remove your first console log and your <code>rows[rows.length - 1]</code> assignment. Leave the second <code>rows</code> log statement for later.</p>
@@ -469,13 +889,30 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+console.log(rows);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m ]
 
 
 ---
 
 
+
 ## Step24:
+
 
 
 <p>In the last few steps, you learned all about working with arrays. Take a moment to review what you have learned.</p>
@@ -486,19 +923,49 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 <p>When done correctly, you should see this output in the console.</p>
 
+**Example Code**
+
+```
+[ "London", "New York", "Mumbai" ]
+[ "London", "New York", "Mexico City" ]
+```
+
 
 
 **Source file link:** [pyramidGenerator_step24.js](./pyramidGenerator_step24.js)
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+console.log(rows);
+let cities = ["London", "New York", "Mumbai"];
+console.log(cities);
+cities[cities.length - 1] = "Mexico City";
+console.log(cities);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m ]
+    [ [32m'London'[39m, [32m'New York'[39m, [32m'Mumbai'[39m ]
+    [ [32m'London'[39m, [32m'New York'[39m, [32m'Mexico City'[39m ]
 
 
 ---
 
 
+
 ## Step25:
+
 
 
 <p>Now you are ready to move onto the next set of array lessons.</p>
@@ -511,18 +978,40 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+console.log(rows);
+```
+
+
 ### Execution logs: 
+
+
+
+    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m ]
 
 
 ---
 
 
+
 ## Step26:
+
 
 
 <p>A <dfn>method</dfn> in JavaScript is a function that's associated with certain values or objects. An example you've already encountered is the <code>.log()</code> method, which is part of the <code>console</code> object.</p>
 
 <p>Arrays have their own methods, and the first you will explore is the <code>.push()</code> method. This allows you to "push" a value to the end of an array. Here is an example to add the number <code>12</code> to the end of an array:</p>
+
+**Example Code**
+
+```js
+array.push(12);
+```
 
 <p>Use <code>.push()</code> to add the string <code>"freeCodeCamp"</code> to the end of your <code>rows</code> array. Add this code before your <code>console.log</code> so you can see the change you made to your array.</p>
 
@@ -532,13 +1021,30 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+rows.push("freeCodeCamp");
+console.log(rows);
+```
+
+
 ### Execution logs: 
+
+
+
+    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m, [32m'freeCodeCamp'[39m ]
 
 
 ---
 
 
+
 ## Step27:
+
 
 
 <p>Another method essential for this project is the <code>.pop()</code> method. It removes the last element from an array and <dfn>returns</dfn> that element.</p>
@@ -553,13 +1059,34 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+rows.push("freeCodeCamp");
+let popped = rows.pop();
+console.log(popped);
+console.log(rows);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    freeCodeCamp
+    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m ]
 
 
 ---
 
 
+
 ## Step28:
+
 
 
 <p>You should have seen <code>"freeCodeCamp"</code> printed to the console. This is because <code>.pop()</code> returns the value that was removed from the array - and you pushed <code>"freeCodeCamp"</code> to the end of the array earlier.</p>
@@ -572,13 +1099,39 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+rows.push("freeCodeCamp");
+let popped = rows.pop();
+console.log(popped);
+console.log(rows);
+let pushed = rows.push("freeCodeCamp");
+console.log(pushed);
+console.log(rows);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    freeCodeCamp
+    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m ]
+    [33m4[39m
+    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m, [32m'freeCodeCamp'[39m ]
 
 
 ---
 
 
+
 ## Step29:
+
 
 
 <p>Were you expecting to see <code>4</code> in the console? <code>.push()</code> returns the new length of the array, after adding the value you give it.</p>
@@ -591,13 +1144,25 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step30:
+
 
 
 <p>Change your <code>rows</code> declaration to be assigned an empty array again.</p>
@@ -610,13 +1175,25 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+let character = "Hello";
+let count = 8;
+let rows = [];
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step31:
+
 
 
 <p>Declaring a variable with the <code>let</code> keyword allows it to be reassigned. This means you could change <code>character</code> later to be a completely different value.</p>
@@ -625,7 +1202,20 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 <p>First, a <code>const</code> variable cannot be reassigned like a <code>let</code> variable. This code would throw an error:</p>
 
+**Example Code**
+
+```js
+const firstName = "Naomi";
+firstName = "Jessica";
+```
+
 <p>A <code>const</code> variable also cannot be uninitialized. This code would throw an error:</p>
+
+**Example Code**
+
+```js
+const firstName;
+```
 
 <p>Replace your <code>let</code> keywords with <code>const</code>.</p>
 
@@ -635,13 +1225,25 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "Hello";
+const count = 8;
+const rows = [];
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step32:
+
 
 
 <p>You are now ready to start building your pyramid generator. Your <code>character</code> variable will serve as the building block for the pyramid.</p>
@@ -654,18 +1256,38 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step33:
+
 
 
 <p>To generate a pyramid, you will need to create multiple rows. When you have to perform a task repeatedly until a condition is met, you will use a <dfn>loop</dfn>. There are many ways to write a loop.</p>
 
 <p>You are going to start with a basic <code>for</code> loop. <code>for</code> loops use the following syntax:</p>
+
+**Example Code**
+
+```js
+for (iterator; condition; iteration) {
+  logic;
+}
+```
 
 <p>In the upcoming steps, you'll explore each component of a loop in detail. For now, construct a <code>for</code> loop that includes the terms <code>"iterator"</code>, <code>"condition"</code>, and <code>"iteration"</code> for the three components. Keep the loop <dfn>body</dfn>, the section within the curly braces <code>{}</code>, empty.</p>
 
@@ -675,18 +1297,44 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+// for ("iterator"; "condition"; "iteration") {
+    
+// }
+```
+
+
+**Note:** Part of the code has been commented out because, it is just a format of `for` loop.
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step34:
+
 
 
 <p>Your loop now needs a proper iterator. The <dfn>iterator</dfn> is a variable you can declare specifically in your <code>for</code> loop to control how the loop iterates or goes through your logic.</p>
 
 <p>It is a common convention to use <code>i</code> as your iterator variable in a loop. A <code>for</code> loop allows you to declare this in the parentheses <code>()</code>. For example, here is a <code>for</code> loop that declares an <code>index</code> variable and assigns it the value <code>100</code>.</p>
+
+**Example Code**
+
+```js
+for (let index = 100; "second"; "third") {
+
+}
+```
 
 <p>Replace the string <code>"iterator"</code> with a <code>let</code> declaration for the variable <code>i</code>. Assign it the value <code>0</code> to start. This will give the <code>i</code> variable the value <code>0</code> the <strong>first time</strong> your loop runs.</p>
 
@@ -696,13 +1344,31 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+// for (let i = 0; "condition"; "iteration") {
+    
+// }
+```
+
+
+**Note:** Part of the code has been commented out since it is not a valid code but just a format used to explain.
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step35:
+
 
 
 <p>The <dfn>condition</dfn> of a <code>for</code> loop tells the loop how many times it should iterate. When the <code>condition</code> becomes false, the loop will stop.</p>
@@ -719,13 +1385,31 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+// for (let i = 0; i < count; "iteration") {
+    
+// }
+```
+
+
+**Note:** Part of the code has been commented out because it is not yet a valid syntax.
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step36:
+
 
 
 <p>Your <dfn>iteration</dfn> statement will tell your loop what to do with the iterator after each run.</p>
@@ -740,13 +1424,29 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+    
+}
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step37:
+
 
 
 <p>Your loop should now run eight times. Inside the body of the loop, print the value of the <code>i</code> iterator and see what happens.</p>
@@ -757,13 +1457,40 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+    console.log(i);
+    
+}
+```
+
+
 ### Execution logs: 
+
+
+
+    [33m0[39m
+    [33m1[39m
+    [33m2[39m
+    [33m3[39m
+    [33m4[39m
+    [33m5[39m
+    [33m6[39m
+    [33m7[39m
 
 
 ---
 
 
+
 ## Step38:
+
 
 
 <p>You should see the numbers zero through seven printed in your console, one per line. This will serve as the foundation for generating your pyramid.</p>
@@ -776,13 +1503,29 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(i);
+}
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step39:
+
 
 
 <p>Unfortunately, now you cannot see what your loop is doing.</p>
@@ -795,13 +1538,31 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(i);
+}
+
+let result = "";
+```
+
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step40:
+
 
 
 <p>Add a log statement to print the value of <code>result</code>. Depending on which console you use, you may not see anything printed.</p>
@@ -812,18 +1573,49 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(i);
+}
+
+let result = "";
+console.log(result);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    
 
 
 ---
 
 
+
 ## Step41:
+
 
 
 <p>To manipulate the <code>result</code> string, you will use a different type of loop. Specifically, a <code>for...of</code> loop, which iterates over each item in an iterable object and temporarily assigns it to a variable.</p>
 
 <p>The syntax for a <code>for...of</code> loop looks like:</p>
+
+**Example Code**
+
+```js
+for (const value of iterable) {
+
+}
+```
 
 <p>Note that you can use <code>const</code> because the variable only exists for a single iteration, not during the entire loop.</p>
 
@@ -835,13 +1627,39 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(i);
+}
+
+let result = "";
+console.log(result);
+
+for (const row of rows) {
+    
+}
+```
+
+
 ### Execution logs: 
+
+
+
+    
 
 
 ---
 
 
+
 ## Step42:
+
 
 
 <p>Remember in your previous loop that you used the addition operator <code>+</code> to increase the value of <code>i</code> by <code>1</code>.</p>
@@ -856,18 +1674,51 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(i);
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + row;
+}
+
+console.log(result);
+```
+
+
 ### Execution logs: 
+
+
+
+    01234567
 
 
 ---
 
 
+
 ## Step43:
+
 
 
 <p>Now all of your numbers are appearing on the same line. This will not work for creating a pyramid.</p>
 
 <p>You will need to add a new line to each row. However, pressing the return key to insert a line break between quotes in JavaScript will result in a parsing error. Instead, you need to use the special <dfn>escape sequence</dfn> <code>\n</code>, which is interpreted as a new line when the string is logged. For example:</p>
+
+**Example Code**
+
+```js
+lineOne = lineOne + "\n" + lineTwo;
+```
 
 <p>Use a second addition operator to concatenate a new line between the existing <code>result</code> value and the added <code>row</code> value.</p>
 
@@ -877,13 +1728,48 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(i);
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
+```
+
+
 ### Execution logs: 
+
+
+
+    
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
 
 
 ---
 
 
+
 ## Step44:
+
 
 
 <p>Printing numbers won't result in a visually appealing pyramid. Now that you're outputting the formatted content of your <code>rows</code> array, it's time to update your original loop.</p>
@@ -896,18 +1782,60 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character);
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
+```
+
+
 ### Execution logs: 
+
+
+
+    
+    #
+    #
+    #
+    #
+    #
+    #
+    #
+    #
 
 
 ---
 
 
+
 ## Step45:
+
 
 
 <p>Now you have a series of <code>#</code> characters, but the pyramid shape is still missing. Fortunately, the <code>i</code> variable represents the current "row" number in your loop, enabling you to use it for crafting a pyramid-like structure.</p>
 
 <p>To achieve this, you will use the <code>.repeat()</code> method available to strings. This method accepts a number as an argument, specifying the number of times to repeat the target string. For example, using <code>.repeat()</code> to generate the string <code>"Code! Code! Code!"</code>:</p>
+
+**Example Code**
+
+```js
+const activity = "Code! ";
+activity.repeat(3);
+```
 
 <p>Use the <code>.repeat()</code> method on your <code>character</code>, and give it <code>i</code> for the number.</p>
 
@@ -917,13 +1845,48 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
+```
+
+
 ### Execution logs: 
+
+
+
+    
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
 
 
 ---
 
 
+
 ## Step46:
+
 
 
 <p>You're getting closer! At this point, you're encountering what's known as an <dfn>off-by-one error</dfn>, a frequent problem in zero-based indexing languages like JavaScript.</p>
@@ -938,18 +1901,61 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
+```
+
+
 ### Execution logs: 
+
+
+
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
 
 
 ---
 
 
+
 ## Step47:
+
 
 
 <p>The logic for formatting this pyramid is likely going to get complicated, which means it's a great time to extract that code into a function.</p>
 
 <p>A <dfn>function</dfn> is a block of code that can be reused throughout your application. Functions are declared with the following syntax:</p>
+
+**Example Code**
+
+```js
+function name(parameter) {
+
+}
+```
 
 <p>The <code>function</code> keyword tells JavaScript that the <code>name</code> variable is going to be a function. <code>parameter</code> is a variable that represents a value that is passed into the function when it is used. A function may have as many, or as few, <dfn>parameters</dfn> as you'd like. Like a <code>for</code> loop, the space between the curly braces is the <dfn>function body</dfn>.</p>
 
@@ -961,16 +1967,66 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow() {
+
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
 
 
 ---
 
 
+
 ## Step48:
 
 
+
 <p>In order to use a function, you need to call it. A <dfn>function call</dfn> tells your application to run the code from the function wherever you choose to call it. The syntax for a function call is the function name followed by parentheses. For example, this code defines and calls a <code>test</code> function.</p>
+
+**Example Code**
+
+```js
+function test() {
+
+}
+
+test();
+```
 
 <p>Call your <code>padRow</code> function.</p>
 
@@ -980,13 +2036,55 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow() {
+
+}
+
+padRow();
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
 
 
 ---
 
 
+
 ## Step49:
+
 
 
 <p>You are calling your <code>padRow</code> function, but not doing anything with that function call. All functions in JavaScript <dfn>return</dfn> a value, meaning they provide the defined result of calling them for you to use elsewhere.</p>
@@ -999,13 +2097,55 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow() {
+
+}
+
+const call = padRow();
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
 
 
 ---
 
 
+
 ## Step50:
+
 
 
 <p>Now add a log statement to print the value of your <code>call</code> variable.</p>
@@ -1016,13 +2156,57 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
+
+```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow() {
+
+}
+
+const call = padRow();
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
+
+```
+
+
 ### Execution logs: 
+
+
+
+    [90mundefined[39m
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
 
 
 ---
 
 
+
 ## Step51:
+
 
 
 <p>Your <code>call</code> variable has an <code>undefined</code> value, even though you defined it! This is because your <code>padRow</code> function does not currently return a value. By default, functions return <code>undefined</code> as their value.</p>
@@ -1037,13 +2221,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step52:
+
 
 
 <p>When you have a value that is explicitly written in your code, like the <code>"Hello!"</code> string in your function, it is considered to be <dfn>hard-coded</dfn>. Hard-coding a value inside a function might not make it as reusable as you'd like.</p>
@@ -1060,13 +2248,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step53:
+
 
 
 <p>A function does not have to return a hard-coded value. It can return the value stored in a variable. Parameters are special variables for a function, so they can also be returned.</p>
@@ -1079,13 +2271,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step54:
+
 
 
 <p>If you open your console again, you'll see that your <code>padRow</code> function is returning <code>undefined</code>, even though you defined a return value! This is because parameters need to be given a value when you <strong>call</strong> the function.</p>
@@ -1100,13 +2296,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step55:
+
 
 
 <p>Before moving on, take a moment to review how functions work.</p>
@@ -1125,13 +2325,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step56:
+
 
 
 <p>With that quick review complete, you should remove your <code>addTwoNumbers</code> function, <code>sum</code> variable, and log statement.</p>
@@ -1142,13 +2346,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step57:
+
 
 
 <p>Variables in JavaScript are available in a specific <dfn>scope</dfn>. In other words, where a variable is declared determines where in your code it can be used.</p>
@@ -1165,13 +2373,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step58:
+
 
 
 <p>Variables can also be declared inside a function. These variables are considered to be in the <dfn>local scope</dfn>, or <dfn>block scope</dfn>. A variable declared inside a function can only be used inside that function. If you try to access it outside of the function, you get a reference error.</p>
@@ -1186,13 +2398,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step59:
+
 
 
 <p>Values returned out of a function are used by calling the function. You can use the function call directly as the value it returns, or capture the returned value in a variable. This way, you can use the value assigned to a locally scoped variable, outside the function it was created in.</p>
@@ -1205,13 +2421,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step60:
+
 
 
 <p>Below the <code>return</code> statement, log the string <code>"This works!"</code> to the console.</p>
@@ -1228,13 +2448,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step61:
+
 
 
 <p>Now your <code>call</code> variable has the value <code>"Testing"</code>. But your function is no longer using the <code>name</code> parameter.</p>
@@ -1249,13 +2473,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step62:
+
 
 
 <p>Because your function was no longer using the parameter, changing the argument did not affect it.</p>
@@ -1268,13 +2496,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step63:
+
 
 
 <p>As expected, your function now returns <code>undefined</code> again. Your <code>call</code> variable is not necessary any more, so remove the <code>call</code> declaration and the <code>console.log</code> for the <code>call</code> variable.</p>
@@ -1285,13 +2517,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step64:
+
 
 
 <p>In order to know how to format a row, your <code>padRow</code> function will need to know which row number you are on, and how many rows in total are being generated.</p>
@@ -1304,13 +2540,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step65:
+
 
 
 <p>Remember in an earlier step, you learned about return values. A function can <dfn>return</dfn> a value for your application to consume separately.</p>
@@ -1325,13 +2565,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step66:
+
 
 
 <p>A <dfn>function call</dfn> allows you to actually use a function. You may not have been aware of it, but the methods like <code>.push()</code> that you have been using have been function calls.</p>
@@ -1346,13 +2590,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step67:
+
 
 
 <p>Your <code>padRow</code> function has two parameters which you defined. Values are provided to those parameters when a function is called.</p>
@@ -1367,13 +2615,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step68:
+
 
 
 <p>You should now see the same bunch of characters in your console. Your <code>padRow</code> function is doing the exact same thing you were doing earlier, but now it's in a reusable section of its own.</p>
@@ -1388,13 +2640,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step69:
+
 
 
 <p>Now it is time for a bit of math. Consider a three-row pyramid. If we want it centered, it would look something like:</p>
@@ -1411,13 +2667,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step70:
+
 
 
 <p>You can pass full expressions as an argument. The function will receive the result of evaluating that expression. For example, these two function calls would yield the same result:</p>
@@ -1434,13 +2694,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step71:
+
 
 
 <p>Your pyramid generator now functions as expected. But this is an excellent opportunity to further explore the code you have written.</p>
@@ -1455,13 +2719,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step72:
+
 
 
 <p>Because you are only increasing <code>i</code> by <code>1</code>, you can use the <dfn>increment operator</dfn> <code>++</code>. This operator increases the value of a variable by 1, updating the assignment for that variable. For example, <code>test</code> would become <code>8</code> here:</p>
@@ -1474,13 +2742,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step73:
+
 
 
 <p>Rather than having to pass <code>i + 1</code> to your <code>padRow</code> call, you could instead start your loop at <code>1</code>. This would allow you to create a one-indexed loop.</p>
@@ -1493,13 +2765,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step74:
+
 
 
 <p>The pyramid looks a little funny now. Because you are starting the loop at <code>1</code> instead of <code>0</code>, you do not need to add one to <code>i</code> when you pass it to <code>padRow</code>.</p>
@@ -1512,13 +2788,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step75:
+
 
 
 <p>Unfortunately, now the bottom of the pyramid has disappeared. This is because you have created another <dfn>off-by-one error</dfn>.</p>
@@ -1535,13 +2815,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step76:
+
 
 
 <p>Comments can be helpful for explaining why your code takes a certain approach, or leaving to-do notes for your future self.</p>
@@ -1556,13 +2840,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step77:
+
 
 
 <p>JavaScript also has support for multi-line comments. A multi-line comment starts with <code>/*</code> and ends with <code>*/</code>.</p>
@@ -1577,13 +2865,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step78:
+
 
 
 <p>Your pyramid has disappeared again. That's okay - that is to be expected.</p>
@@ -1598,13 +2890,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step79:
+
 
 
 <p>You'll see the string printed in the console, because <code>true</code> is in fact true.</p>
@@ -1617,13 +2913,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step80:
+
 
 
 <p>Now the string is no longer printing, because <code>false</code> is not <code>true</code>. But what about other values?</p>
@@ -1636,13 +2936,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step81:
+
 
 
 <p>The text has appeared again! This is because <code>"false"</code> is a string, which when evaluated to a boolean becomes <code>true</code>. This means <code>"false"</code> is a truthy value.</p>
@@ -1659,13 +2963,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step82:
+
 
 
 <p>The text is gone again! Empty strings evaluate to <code>false</code>, making them a <dfn>falsy value</dfn>. You will learn more about truthy and falsy values in future projects.</p>
@@ -1686,13 +2994,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step83:
+
 
 
 <p>Sometimes you will want to run different code when all of the <code>if...else if</code> conditions are <code>false</code>. You can do this by adding an <code>else</code> block.</p>
@@ -1711,13 +3023,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step84:
+
 
 
 <p>Now that you have practiced working with <code>if...else if...else</code> statements, you can remove them from your code.</p>
@@ -1730,13 +3046,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step85:
+
 
 
 <p>A <dfn><code>while</code></dfn> loop will run over and over again until the <code>condition</code> specified is no longer true. It has the following syntax:</p>
@@ -1749,13 +3069,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step86:
+
 
 
 <p>Right now, if you change <code>continueLoop</code> to true, your <code>while</code> loop will run forever. This is called an <dfn>infinite loop</dfn>, and you should be careful to avoid these. An infinite loop can lock up your system, requiring a full restart to escape.</p>
@@ -1768,13 +3092,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step87:
+
 
 
 <p>The <dfn>equality</dfn> operator <code>==</code> is used to check if two values are equal. To compare two values, you'd use a statement like <code>value == 8</code>.</p>
@@ -1787,13 +3115,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step88:
+
 
 
 <p>The equality operator can lead to some strange behavior in JavaScript. For example, <code>"0" == 0</code> is true, even though one is a string and one is a number.</p>
@@ -1808,13 +3140,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step89:
+
 
 
 <p>When <code>done</code> has reached the value of <code>count</code>, we want the loop to stop executing.</p>
@@ -1827,13 +3163,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step90:
+
 
 
 <p>To make your pyramid generate again, push the result of calling <code>padRow</code> with <code>done</code> and <code>count</code> as the arguments to your <code>rows</code> array, similar to what you did in your first loop.</p>
@@ -1844,13 +3184,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step91:
+
 
 
 <p>The <dfn>strict inequality</dfn> operator <code>!==</code> allows you to check if two values are not equal, or do not have the same type. The syntax is similar to the equality operator: <code>value !== 4</code>.</p>
@@ -1863,13 +3207,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step92:
+
 
 
 <p>Since you have moved the comparison into the <code>while</code> condition, you can remove your entire <code>if</code> statement.</p>
@@ -1880,13 +3228,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step93:
+
 
 
 <p>Your loop is no longer relying on the <code>continueLoop</code> variable. This makes the variable an <dfn>unused declaration</dfn>. Generally, you want to avoid unused declarations to prevent future confusion.</p>
@@ -1899,13 +3251,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step94:
+
 
 
 <p>Your pyramid generator is still working. However, it could be possible to end up with an infinite loop again.</p>
@@ -1920,13 +3276,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step95:
+
 
 
 <p>Using <code>done</code> to track the number of rows that have been generated is functional, but you can actually clean up the logic a bit further.</p>
@@ -1943,13 +3303,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step96:
+
 
 
 <p>Replace the <code>done</code> reference in your <code>padRow</code> call with <code>rows.length + 1</code>.</p>
@@ -1960,13 +3324,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step97:
+
 
 
 <p>Now you no longer need your <code>done</code> variable. Remove the increment operation from your loop, and the variable declaration for <code>done</code>.</p>
@@ -1977,13 +3345,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step98:
+
 
 
 <p>That's a very clean and functional loop. Nice work! But there's still more to explore.</p>
@@ -1996,13 +3368,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step99:
+
 
 
 <p>What if you made your pyramid upside-down, or <dfn>inverted</dfn>? Time to try it out!</p>
@@ -2015,13 +3391,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step100:
+
 
 
 <p>Because you are going to loop in the opposite direction, your loop needs to run while <code>i</code> is greater than <code>0</code>. You can use the <dfn>greater than</dfn> operator <code>&gt;</code> for this.</p>
@@ -2034,13 +3414,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step101:
+
 
 
 <p>Your iteration statement is also going to be different. Instead of adding <code>1</code> to <code>i</code> with each loop, you need to subtract <code>1</code>.</p>
@@ -2053,13 +3437,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step102:
+
 
 
 <p>Again, push the result of calling <code>padRow</code> with your <code>i</code> and <code>count</code> variables to your <code>rows</code> array.</p>
@@ -2072,13 +3460,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step103:
+
 
 
 <p>Just like addition, there are different operators you can use for subtraction. The <dfn>subtraction assignment</dfn> operator <code>-=</code> subtracts the given value from the current variable value, then assigns the result back to the variable.</p>
@@ -2091,13 +3483,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step104:
+
 
 
 <p>Because you are only subtracting one from <code>i</code>, you can use the <dfn>decrement operator</dfn> <code>--</code>.</p>
@@ -2110,13 +3506,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step105:
+
 
 
 <p>Use a multi-line comment to comment out this loop as well, to prepare for the next approach.</p>
@@ -2127,13 +3527,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step106:
+
 
 
 <p>You can actually build the inverted pyramid without needing to loop "backwards" like you did.</p>
@@ -2146,13 +3550,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step107:
+
 
 
 <p>The <code>.unshift()</code> method of an array allows you to add a value to the <strong>beginning</strong> of the array, unlike <code>.push()</code> which adds the value at the end of the array. <code>.unshift()</code> returns the new length of the array it was called on.</p>
@@ -2165,13 +3573,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step108:
+
 
 
 <p>Arrays also have a <code>.shift()</code> method. This will remove the <strong>first</strong> element of the array, unlike <code>.pop()</code> which removes the last element. Here is an example of the <code>.shift()</code> method:</p>
@@ -2186,13 +3598,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step109:
+
 
 
 <p>Now that you've tried these methods, you can do another inverted pyramid approach. But first you need to clean up your experimentation.</p>
@@ -2205,13 +3621,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step110:
+
 
 
 <p>Sometimes you may wish to bring back previous code that you commented out. You can do so by removing the <code>/*</code> and <code>*/</code> around that code. This is called <dfn>uncommenting</dfn>.</p>
@@ -2224,13 +3644,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step111:
+
 
 
 <p>Your pyramid is no longer inverted. This is because you are adding new rows to the <strong>end</strong> of the array.</p>
@@ -2243,13 +3667,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step112:
+
 
 
 <p>What if you had a way to toggle between an inverted pyramid and a standard pyramid?</p>
@@ -2262,13 +3690,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step113:
+
 
 
 <p>Use an <code>if</code> statement to check if <code>inverted</code> is true. Remember that you do not need to use an equality operator here.</p>
@@ -2279,13 +3711,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step114:
+
 
 
 <p>Now move your <code>.unshift()</code> call into your <code>if</code> block.</p>
@@ -2296,13 +3732,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step115:
+
 
 
 <p>If your pyramid is not inverted, then you will want to have an <code>else</code> block that builds the pyramid in the normal order.</p>
@@ -2317,13 +3757,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step116:
+
 
 
 <p>When <code>inverted</code> is false, you want to build a standard pyramid. Use <code>.push()</code> like you have in previous steps to achieve this.</p>
@@ -2334,13 +3778,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step117:
+
 
 
 <p>Your pyramid generator is now in a finished state, with more functionality than you originally planned! The next step is to clean up your code.</p>
@@ -2353,13 +3801,17 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
+
 
 
 ---
 
 
+
 ## Step118:
+
 
 
 <p>Nice work! Experiment with different values for your <code>character</code>, <code>count</code>, and <code>inverted</code> variables.</p>
@@ -2374,8 +3826,11 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 
 
+
 ### Execution logs: 
 
 
+
 ---
+
 
