@@ -264,7 +264,7 @@ console.log(secondCharacter);
 ### Execution logs: 
 
     Hello
-    [90mundefined[39m
+    undefined
 
 
 ---
@@ -386,7 +386,7 @@ console.log(age);
 ### Execution logs: 
 
     teacher
-    [90mundefined[39m
+    undefined
 
 
 ---
@@ -449,7 +449,7 @@ console.log(count + 1);
 
 ### Execution logs: 
 
-    [33m9[39m
+    9
 
 
 ---
@@ -588,7 +588,7 @@ console.log(rows);
 ### Execution logs: 
 
     Naomi
-    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [33m10[39m ]
+    [ 'Naomi', 'Quincy', 10 ]
 
 
 ---
@@ -630,7 +630,7 @@ console.log(rows);
 ### Execution logs: 
 
     Naomi
-    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [33m10[39m ]
+    [ 'Naomi', 'Quincy', 10 ]
 
 
 ---
@@ -653,7 +653,7 @@ console.log(rows);
 
 ### Execution logs: 
 
-    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m ]
+    [ 'Naomi', 'Quincy', 'CamperChan' ]
 
 
 ---
@@ -693,9 +693,9 @@ console.log(cities);
 
 ### Execution logs: 
 
-    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m ]
-    [ [32m'London'[39m, [32m'New York'[39m, [32m'Mumbai'[39m ]
-    [ [32m'London'[39m, [32m'New York'[39m, [32m'Mexico City'[39m ]
+    [ 'Naomi', 'Quincy', 'CamperChan' ]
+    [ 'London', 'New York', 'Mumbai' ]
+    [ 'London', 'New York', 'Mexico City' ]
 
 
 ---
@@ -719,7 +719,7 @@ console.log(rows);
 
 ### Execution logs: 
 
-    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m ]
+    [ 'Naomi', 'Quincy', 'CamperChan' ]
 
 
 ---
@@ -752,7 +752,7 @@ console.log(rows);
 
 ### Execution logs: 
 
-    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m, [32m'freeCodeCamp'[39m ]
+    [ 'Naomi', 'Quincy', 'CamperChan', 'freeCodeCamp' ]
 
 
 ---
@@ -783,7 +783,7 @@ console.log(rows);
 ### Execution logs: 
 
     freeCodeCamp
-    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m ]
+    [ 'Naomi', 'Quincy', 'CamperChan' ]
 
 
 ---
@@ -815,9 +815,9 @@ console.log(rows);
 ### Execution logs: 
 
     freeCodeCamp
-    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m ]
-    [33m4[39m
-    [ [32m'Naomi'[39m, [32m'Quincy'[39m, [32m'CamperChan'[39m, [32m'freeCodeCamp'[39m ]
+    [ 'Naomi', 'Quincy', 'CamperChan' ]
+    4
+    [ 'Naomi', 'Quincy', 'CamperChan', 'freeCodeCamp' ]
 
 
 ---
@@ -1070,14 +1070,14 @@ for (let i = 0; i < count; i = i + 1) {
 
 ### Execution logs: 
 
-    [33m0[39m
-    [33m1[39m
-    [33m2[39m
-    [33m3[39m
-    [33m4[39m
-    [33m5[39m
-    [33m6[39m
-    [33m7[39m
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
 
 
 ---
@@ -1641,7 +1641,7 @@ console.log(result);
 
 ### Execution logs: 
 
-    [90mundefined[39m
+    undefined
     
     #
     ##
@@ -1819,7 +1819,7 @@ console.log(result);
 
 ### Execution logs: 
 
-    [90mundefined[39m
+    undefined
     
     #
     ##
@@ -1958,7 +1958,7 @@ console.log(result);
 
 ### Execution logs: 
 
-    [33m15[39m
+    15
     Mallikarjuna G
     
     #
@@ -2373,7 +2373,7 @@ console.log(result);
 
 ### Execution logs: 
 
-    [90mundefined[39m
+    undefined
     
     #
     ##
@@ -4136,14 +4136,14 @@ console.log(result);
     
     RangeError: Invalid count value
         at String.repeat (<anonymous>)
-        at padRow [90m(/home/arjuna/MG_m00g/freeCodeCamp/fcc_JSAlgoAndDS/pyramidGenerator/[39mpyramidGenerator_step94.js:6:16[90m)[39m
-        at Object.<anonymous> [90m(/home/arjuna/MG_m00g/freeCodeCamp/fcc_JSAlgoAndDS/pyramidGenerator/[39mpyramidGenerator_step94.js:20:15[90m)[39m
-    [90m    at Module._compile (node:internal/modules/cjs/loader:1356:14)[39m
-    [90m    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)[39m
-    [90m    at Module.load (node:internal/modules/cjs/loader:1197:32)[39m
-    [90m    at Module._load (node:internal/modules/cjs/loader:1013:12)[39m
-    [90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)[39m
-    [90m    at node:internal/main/run_main_module:28:49[39m
+        at padRow (/home/arjuna/MG_m00g/freeCodeCamp/fcc_JSAlgoAndDS/pyramidGenerator/pyramidGenerator_step94.js:6:16)
+        at Object.<anonymous> (/home/arjuna/MG_m00g/freeCodeCamp/fcc_JSAlgoAndDS/pyramidGenerator/pyramidGenerator_step94.js:20:15)
+        at Module._compile (node:internal/modules/cjs/loader:1356:14)
+        at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+        at Module.load (node:internal/modules/cjs/loader:1197:32)
+        at Module._load (node:internal/modules/cjs/loader:1013:12)
+        at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+        at node:internal/main/run_main_module:28:49
     
     Node.js v18.19.0
 
@@ -4818,7 +4818,7 @@ console.log(result);
 
 ### Execution logs: 
 
-    [ [33m1[39m, [33m2[39m, [33m3[39m ]
+    [ 1, 2, 3 ]
     
 
 
@@ -4889,9 +4889,9 @@ console.log(result);
 
 ### Execution logs: 
 
-    [ [33m1[39m, [33m2[39m, [33m3[39m ]
-    [33m4[39m
-    [ [33m5[39m, [33m1[39m, [33m2[39m, [33m3[39m ]
+    [ 1, 2, 3 ]
+    4
+    [ 5, 1, 2, 3 ]
     
 
 
@@ -4965,11 +4965,11 @@ console.log(result);
 
 ### Execution logs: 
 
-    [ [33m1[39m, [33m2[39m, [33m3[39m ]
-    [33m1[39m
-    [ [33m2[39m, [33m3[39m ]
-    [33m3[39m
-    [ [33m5[39m, [33m2[39m, [33m3[39m ]
+    [ 1, 2, 3 ]
+    1
+    [ 2, 3 ]
+    3
+    [ 5, 2, 3 ]
     
 
 
