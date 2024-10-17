@@ -1661,17 +1661,59 @@ console.log(result);
 
 <p>In order to return something else, you need to use the <code>return</code> keyword. Here is an example of a function that returns the string <code>"Functions are cool!"</code>:</p>
 
+**Example Code**
+
+```js
+function demo() {
+  return "Functions are cool!";
+}
+```
+
 <p>Use the <code>return</code> keyword to have your function return the string <code>"Hello!"</code>.</p>
 
 **Source file link:** [pyramidGenerator_step51.js](./pyramidGenerator_step51.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow() {
+    return "Hello!";
+}
+
+const call = padRow();
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    Hello!
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1683,17 +1725,59 @@ console.log(result);
 
 <p>To add a parameter to your function, you need to add a variable name inside the parentheses. For example, this <code>demo</code> function has a <code>name</code> parameter:</p>
 
+**Example Code**
+
+```js
+function demo(name) {
+
+}
+```
+
 <p><code>name</code> sounds like a useful parameter, so go ahead and add it to your <code>padRow</code> function.</p>
 
 **Source file link:** [pyramidGenerator_step52.js](./pyramidGenerator_step52.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    return "Hello!";
+}
+
+const call = padRow();
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    Hello!
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1707,11 +1791,45 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    return name;
+}
+
+const call = padRow();
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    [90mundefined[39m
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1721,17 +1839,60 @@ console.log(result);
 
 <p>When you pass a value to a function call, that value is referred to as an <dfn>argument</dfn>. Here is an example of calling a <code>demo</code> function and passing <code>"Naomi"</code> as the argument for the <code>name</code> parameter.</p>
 
+**Example Code**
+
+```js
+function demo(name) {
+  return name;
+}
+demo("Naomi");
+```
+
 <p>Pass your own name as the argument for the <code>name</code> parameter in your <code>padRow</code> call. Remember that your name is a string, so you'll need to use quotes.</p>
 
 **Source file link:** [pyramidGenerator_step54.js](./pyramidGenerator_step54.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    return name;
+}
+
+const call = padRow("Mallikarjuna G");
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    Mallikarjuna G
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1743,6 +1904,16 @@ console.log(result);
 
 <p>Your function should not use hard-coded values. An example of a hard-coded function might be:</p>
 
+**Example Code**
+
+```js
+function sayName(firstName, lastName) {
+  return "John Doe";
+}
+
+sayName("Camper", "Cat");
+```
+
 <p>This function would return <code>"John Doe"</code> regardless of the arguments passed to the parameters <code>firstName</code>, and <code>lastName</code>, so <code>"John Doe"</code> is considered a hard-coded value.</p>
 
 <p>Declare a <code>sum</code> variable and assign it the value of calling your <code>addTwoNumbers</code> function with <code>5</code> and <code>10</code> as the arguments. Log the <code>sum</code> variable to the console.</p>
@@ -1751,11 +1922,54 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function addTwoNumbers(a, b) {
+    return a + b;
+}
+
+const sum = addTwoNumbers(5, 10);
+console.log(sum);
+
+
+function padRow(name) {
+    return name;
+}
+
+const call = padRow("Mallikarjuna G");
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    [33m15[39m
+    Mallikarjuna G
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1767,11 +1981,45 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    return name;
+}
+
+const call = padRow("Mallikarjuna G");
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    Mallikarjuna G
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1783,17 +2031,61 @@ console.log(result);
 
 <p>When a variable is in the global scope, a function can access it in its definition. Here is an example of a function using a global <code>title</code> variable:</p>
 
+**Example Code**
+
+```js
+const title = "Professor ";
+function demo(name) {
+  return title + name;
+}
+demo("Naomi")
+```
+
 <p>This example would return <code>"Professor Naomi"</code>. Update your <code>padRow</code> function to return the value of concatenating your <code>character</code> variable to the beginning of the <code>name</code> parameter.</p>
 
 **Source file link:** [pyramidGenerator_step57.js](./pyramidGenerator_step57.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    return character + name;
+}
+
+const call = padRow("Mallikarjuna G");
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    #Mallikarjuna G
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1809,11 +2101,48 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    const test = "Testing";
+    return character + name;
+}
+// console.log(test);  // Commented because `test` is not visible here.
+
+
+const call = padRow("Mallikarjuna G");
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    #Mallikarjuna G
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1821,17 +2150,70 @@ console.log(result);
 
 <p>Values returned out of a function are used by calling the function. You can use the function call directly as the value it returns, or capture the returned value in a variable. This way, you can use the value assigned to a locally scoped variable, outside the function it was created in.</p>
 
+**Example Code**
+
+```js
+function getName() {
+  const name = "Camper cat";
+  return name;
+}
+
+console.log(getName()); // "Camper cat"
+
+const capturedReturnValue = getName();
+console.log(capturedReturnValue); // "Camper cat"
+
+console.log(name); // reference error
+```
+
 <p>To use your <code>"Testing"</code> value, return it out of the <code>padRow</code> function by updating your <code>return</code> statement to return only the <code>test</code> variable.</p>
 
 **Source file link:** [pyramidGenerator_step59.js](./pyramidGenerator_step59.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    const test = "Testing";
+    return test;
+}
+// console.log(test);  // Commented because `test` is not visible here.
+
+
+const call = padRow("Mallikarjuna G");
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    Testing
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1849,11 +2231,51 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    const test = "Testing";
+    console.log("This works!");
+    return test;
+    console.log("This works!");  // This does not get displayed.
+}
+// console.log(test);  // Commented because `test` is not visible here.
+
+
+const call = padRow("Mallikarjuna G");
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    This works!
+    Testing
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1869,11 +2291,46 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow() {
+    const test = "Testing";
+    return test;
+}
+// console.log(test);  // Commented because `test` is not visible here.
+
+
+const call = padRow();
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1887,11 +2344,46 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow() {
+
+}
+
+const call = padRow();
+console.log(call);
+
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    [90mundefined[39m
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1903,11 +2395,41 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow() {
+
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1917,15 +2439,53 @@ console.log(result);
 
 <p>The best way to do this is by creating function parameters for them. Give your <code>padRow</code> function a <code>rowNumber</code> and <code>rowCount</code> parameter. Multiple parameters are separated by a comma:</p>
 
+**Example Code**
+
+```js
+function name(first, second) {
+
+}
+```
+
 **Source file link:** [pyramidGenerator_step64.js](./pyramidGenerator_step64.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1935,17 +2495,55 @@ console.log(result);
 
 <p>In a function, the <code>return</code> keyword is used to specify a return value. For example, this function would return the value given to the first parameter:</p>
 
+**Example Code**
+
+```js
+function name(parameter) {
+  return parameter;
+}
+```
+
 <p>Use the <code>return</code> keyword to return the value of the <code>character</code> variable, repeated <code>rowNumber</code> times.</p>
 
 **Source file link:** [pyramidGenerator_step65.js](./pyramidGenerator_step65.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return character.repeat(rowNumber);
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1955,17 +2553,53 @@ console.log(result);
 
 <p>A function is called by referencing the function's name, and adding <code>()</code>. Here's how to call a <code>test</code> function:</p>
 
+**Example Code**
+
+```js
+test();
+```
+
 <p>Replace the <code>character.repeat(i + 1)</code> in your <code>.push()</code> call with a function call for your <code>padRow</code> function.</p>
 
 **Source file link:** [pyramidGenerator_step66.js](./pyramidGenerator_step66.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return character.repeat(rowNumber);
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(padRow());
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
 
 ---
 
@@ -1975,17 +2609,53 @@ console.log(result);
 
 <p>The values you provide to a function call are referred to as <dfn>arguments</dfn>, and you <dfn>pass</dfn> arguments to a function call. Here's a function call with <code>"Hello"</code> passed as an argument:</p>
 
+**Example Code**
+
+```js
+test("Hello");
+```
+
 <p>Pass <code>i + 1</code> and <code>count</code> as the arguments to your <code>padRow</code> call. Like parameters, arguments are separated by a comma.</p>
 
 **Source file link:** [pyramidGenerator_step67.js](./pyramidGenerator_step67.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return character.repeat(rowNumber);
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+    ########
+
 
 ---
 
@@ -1997,15 +2667,51 @@ console.log(result);
 
 <p>Remember that you can use the <code>+</code> operator to concatenate strings like this:</p>
 
+**Example Code**
+
+```js
+" " + "string"
+```
+
 **Source file link:** [pyramidGenerator_step68.js](./pyramidGenerator_step68.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " " + character.repeat(rowNumber) + " ";
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+     # 
+     ## 
+     ### 
+     #### 
+     ##### 
+     ###### 
+     ####### 
+     ######## 
+
 
 ---
 
@@ -2013,21 +2719,61 @@ console.log(result);
 
 <p>Now it is time for a bit of math. Consider a three-row pyramid. If we want it centered, it would look something like:</p>
 
+**Example Code**
+
+```
+··#··
+·###·
+#####
+```
+
 <p>Empty spaces have been replaced with interpuncts, or middle dots, for readability. If you extrapolate the pattern, you can see that the spaces at the beginning and end of a row follow a pattern.</p>
 
-<p>Update your blank space strings to be repeated <code>rowCount - rowNumber</code> times.</p>
+<i>Extrapolation: ಸಾಮಾನ್ಯೀಕರಣ (Saamanyeekarana) is the Kannada word for "extrapolation." It refers to the process of making predictions or estimates about data points beyond the range of existing data.</i>
 
-<p>Open up the console to see the result.</p>
+<i>Interpuncts: ವಿರಾಮಚಿಹ್ನೆಗಳು (punctuation marks)</i>
+
+<p>Update your blank space strings to be repeated <code>rowCount - rowNumber</code> times.</p>
 
 **Source file link:** [pyramidGenerator_step69.js](./pyramidGenerator_step69.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(rowNumber) + " ".repeat(rowCount - rowNumber);
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ##      
+         ###     
+        ####    
+       #####   
+      ######  
+     ####### 
+    ########
+
 
 ---
 
@@ -2035,21 +2781,64 @@ console.log(result);
 
 <p>You can pass full expressions as an argument. The function will receive the result of evaluating that expression. For example, these two function calls would yield the same result:</p>
 
+**Example Code**
+
+```js
+test(2 * 3 + 1);
+test(7);
+```
+
 <p>Looking at the pattern again:</p>
 
-<p>Update the <code>character</code> value to be repeated <code>2 * rowNumber - 1</code> times.</p>
+**Example Code**
 
-<p>Open up the console again to see the updated result.</p>
+```js
+··#··
+·###·
+#####
+```
+
+<p>Update the <code>character</code> value to be repeated <code>2 * rowNumber - 1</code> times.</p>
 
 **Source file link:** [pyramidGenerator_step70.js](./pyramidGenerator_step70.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -2059,17 +2848,54 @@ console.log(result);
 
 <p>The addition operator is not the only way to add values to a variable. The <dfn>addition assignment</dfn> operator can be used as shorthand to mean "take the original value of the variable, add this value, and assign the result back to the variable." For example, these two statements would yield the same result:</p>
 
+**Example Code**
+
+```js
+test = test + 1;
+test += 1;
+```
+
 <p>Update your iterator statement in the <code>for</code> loop to use addition assignment.</p>
 
 **Source file link:** [pyramidGenerator_step71.js](./pyramidGenerator_step71.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+for (let i = 0; i < count; i += 1) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -2077,17 +2903,54 @@ console.log(result);
 
 <p>Because you are only increasing <code>i</code> by <code>1</code>, you can use the <dfn>increment operator</dfn> <code>++</code>. This operator increases the value of a variable by 1, updating the assignment for that variable. For example, <code>test</code> would become <code>8</code> here:</p>
 
+**Example Code**
+
+```js
+let test = 7;
+test++;
+```
+
 <p>Replace your addition assignment with the increment operator for your loop iteration.</p>
 
 **Source file link:** [pyramidGenerator_step72.js](./pyramidGenerator_step72.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+for (let i = 0; i < count; i++) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -2101,11 +2964,40 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+for (let i = 1; i < count; i++) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -2119,11 +3011,40 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+for (let i = 1; i < count; i++) {
+    rows.push(padRow(i, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+
 
 ---
 
@@ -2141,11 +3062,41 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -2161,11 +3112,42 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -2181,11 +3163,35 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+
 
 ---
 
@@ -2195,17 +3201,56 @@ console.log(result);
 
 <p>Before you create your new loop, you need to learn about <code>if</code> statements. An <dfn><code>if</code> statement</dfn> allows you to run a block of code only when a condition is met. They use the following syntax:</p>
 
+**Example Code**
+
+```js
+if (condition) {
+  logic
+}
+```
+
 <p>Create an <code>if</code> statement with the boolean <code>true</code> as the condition. In the body, print the string <code>"Condition is true"</code>.</p>
 
 **Source file link:** [pyramidGenerator_step78.js](./pyramidGenerator_step78.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+if(true) {
+    console.log("Condition is true");
+    
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    Condition is true
+    
+
 
 ---
 
@@ -2219,11 +3264,40 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+if(false) {
+    console.log("Condition is true");    
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+
 
 ---
 
@@ -2237,11 +3311,41 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+if("false") {
+    console.log("Condition is true");    
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    Condition is true
+    
+
 
 ---
 
