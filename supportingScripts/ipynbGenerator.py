@@ -73,7 +73,24 @@ jnb['metadata'] = {
 jnb['cells'] = []
 
 
-cell = nbformat.NotebookNode(cell_type='code', metadata={}, outputs=[], execution_count=0, source=["from IPython.display import display, Markdown, HTML, Image"])
+cell = nbformat.NotebookNode(cell_type='code', metadata={}, outputs=[], execution_count=0, source=[
+        "from IPython.display import display, Markdown, HTML, Image",
+        """
+def fetchAndDisplaySrcFileAsCodeBlock(fileName):
+	code = \"\"
+
+	with open(fileName, \"r\") as file:
+		code = file.read()
+	fileType = \"\"
+	i = fileName.rfind(\".\")
+	if i != -1:
+		fileType = fileName[i+1:]
+	display(Markdown(f\"\"\"```{fileType}
+{code}
+```\"\"\"))
+"""
+    ]
+)
 jnb['cells'].append(cell)
 
 projectIntro = """JavaScript is a powerful scripting language that you can use to make web pages interactive. It's one of the core technologies of the web, along with HTML and CSS. All modern browsers support JavaScript.
@@ -103,26 +120,33 @@ for i in range(1, number_of_steps + 1):
 
     Path(f"{projectPath}/{srcFileName}").touch()
 
-    cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"## Step{i}:", "\n"])
+    cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"## Step{i}:"])
     jnb['cells'].append(cell)
     for element in elements:
         cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"{element}"])
         jnb['cells'].append(cell)
 
-    cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=["\n", "\n", f"**Source file link:** [{srcFileName}](./{srcFileName})", "\n", "\n"])
+    cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[
+                f"""**Source file link:** [{srcFileName}](./{srcFileName})"""
+            ]
+        )
     jnb['cells'].append(cell)
 
-    cell = nbformat.NotebookNode(cell_type='code', metadata={}, outputs=[], execution_count=0, source=["code = \"\"\n", f"fileName = \"{srcFileName}\"\n", "\n", "with open(fileName, \"r\") as file:", "\tcode = file.read()", "\n", "display(Markdown(f\"\"\"```js\n{code}\n```\"\"\"))"])
+    cell = nbformat.NotebookNode(cell_type='code', metadata={}, outputs=[], execution_count=0, source=[
+            f"""fileName = \"{srcFileName}\"
+fetchAndDisplaySrcFileAsCodeBlock(fileName)"""
+            ]
+        )
     jnb['cells'].append(cell)
 
-    cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"### Execution logs: ", "\n"])
+    cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"### Execution logs: "])
     jnb['cells'].append(cell)
-    
+
     cell = nbformat.NotebookNode(cell_type='code', metadata={}, outputs=[], execution_count=0, source=[f"!node {srcFileName}"])
     jnb['cells'].append(cell)
 
 
-    cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"---", "\n"])
+    cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"---"])
     jnb['cells'].append(cell)
 
 
