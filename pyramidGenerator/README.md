@@ -3363,11 +3363,40 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+if("") {
+    console.log("Condition is true");    
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+
 
 ---
 
@@ -3379,21 +3408,64 @@ console.log(result);
 
 <p>Here is the syntax for an <code>else if</code> statement:</p>
 
+**Example Code**
+
+```js
+if (condition1) {
+  // code to run if condition1 is true
+} else if (condition2) {
+  // code to run if condition2 is true
+} else if (condition3) {
+  // code to run if condition3 is true
+} 
+```
+
 <p>If the first condition is <code>false</code>, JavaScript will check the next condition in the chain. If the second condition is <code>false</code>, JavaScript will check the third condition, and so on.</p>
 
 <p>Below your <code>if</code> statement, add an <code>else if</code> statement that checks if <code>5</code> is less than <code>10</code>. Then inside the body of the <code>else if</code> statement, log the string <code>"5 is less than 10"</code> to the console.</p>
-
-<p>Check the console to see the results.</p>
 
 **Source file link:** [pyramidGenerator_step82.js](./pyramidGenerator_step82.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+if("") {
+    console.log("Condition is true");    
+}
+else if (5 < 10) {
+    console.log("5 is less than 10");
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    5 is less than 10
+    
+
 
 ---
 
@@ -3405,6 +3477,19 @@ console.log(result);
 
 <p>Here the <code>else</code> block is added to the <code>else if</code> block.</p>
 
+**Example Code**
+
+```js
+if (condition) {
+  // this code will run if condition is true
+} else if (condition2) {
+  // this code will run if the first condition is false
+} else {
+  // this code will run 
+  // if the first and second conditions are false
+}
+```
+
 <p>Add an <code>else</code> block to the <code>else if</code> block. Inside the <code>else</code> block, log the string <code>"This is the else block"</code> to the console.</p>
 
 <p>To see the results in the console, you can manually change the <code>&lt;</code> in the <code>else if</code> statement to <code>&gt;</code>. That will make the condition <code>false</code> and the <code>else</code> block will run.</p>
@@ -3413,11 +3498,47 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+if("") {
+    console.log("Condition is true");    
+}
+else if (5 < 10) {
+    console.log("5 is less than 10");
+}
+else {
+    console.log("This is the else block");
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    5 is less than 10
+    
+
 
 ---
 
@@ -3431,11 +3552,39 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let continueLoop = false;
+let done = 0;
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+
 
 ---
 
@@ -3443,17 +3592,57 @@ console.log(result);
 
 <p>A <dfn><code>while</code></dfn> loop will run over and over again until the <code>condition</code> specified is no longer true. It has the following syntax:</p>
 
+**Example Code**
+
+```js
+while (condition) {
+  logic;
+}
+```
+
 <p>Use that syntax to declare a <code>while</code> loop with <code>continueLoop</code> as the condition. The body should be empty.</p>
 
 **Source file link:** [pyramidGenerator_step85.js](./pyramidGenerator_step85.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let continueLoop = false;
+let done = 0;
+
+while (continueLoop) {
+    
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+
 
 ---
 
@@ -3467,11 +3656,42 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let continueLoop = false;
+let done = 0;
+
+while (continueLoop) {
+    done++;
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+**Note:** Will not be executing since it has infinite loop.
 
 ---
 
@@ -3485,11 +3705,45 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let continueLoop = false;
+let done = 0;
+
+while (continueLoop) {
+    done++;
+    if (done == count) {
+        
+    }
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+**Note:** Do not execute, it contains infinite loop.
 
 ---
 
@@ -3505,11 +3759,45 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let continueLoop = false;
+let done = 0;
+
+while (continueLoop) {
+    done++;
+    if (done === count) {
+        
+    }
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+**Note:** Do not run. Contains infinite loop.
 
 ---
 
@@ -3523,11 +3811,46 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let continueLoop = false;
+let done = 0;
+
+while (continueLoop) {
+    done++;
+    if (done === count) {
+        continueLoop = false;
+    }
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+
 
 ---
 
@@ -3539,11 +3862,47 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let continueLoop = false;
+let done = 0;
+
+while (continueLoop) {
+    done++;
+    rows.push(padRow(done, count));
+    if (done === count) {
+        continueLoop = false;
+    }
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+
 
 ---
 
@@ -3557,11 +3916,55 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let continueLoop = false;
+let done = 0;
+
+while (done !== count) {
+    done++;
+    rows.push(padRow(done, count));
+    if (done === count) {
+        continueLoop = false;
+    }
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -3573,11 +3976,52 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let continueLoop = false;
+let done = 0;
+
+while (done !== count) {
+    done++;
+    rows.push(padRow(done, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -3591,11 +4035,51 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let done = 0;
+
+while (done !== count) {
+    done++;
+    rows.push(padRow(done, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -3611,11 +4095,60 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let done = 0;
+
+while (done <= count) {
+    done++;
+    rows.push(padRow(done, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    /home/arjuna/MG_m00g/freeCodeCamp/fcc_JSAlgoAndDS/pyramidGenerator/pyramidGenerator_step94.js:6
+        return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+                   ^
+    
+    RangeError: Invalid count value
+        at String.repeat (<anonymous>)
+        at padRow [90m(/home/arjuna/MG_m00g/freeCodeCamp/fcc_JSAlgoAndDS/pyramidGenerator/[39mpyramidGenerator_step94.js:6:16[90m)[39m
+        at Object.<anonymous> [90m(/home/arjuna/MG_m00g/freeCodeCamp/fcc_JSAlgoAndDS/pyramidGenerator/[39mpyramidGenerator_step94.js:20:15[90m)[39m
+    [90m    at Module._compile (node:internal/modules/cjs/loader:1356:14)[39m
+    [90m    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)[39m
+    [90m    at Module.load (node:internal/modules/cjs/loader:1197:32)[39m
+    [90m    at Module._load (node:internal/modules/cjs/loader:1013:12)[39m
+    [90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)[39m
+    [90m    at node:internal/main/run_main_module:28:49[39m
+    
+    Node.js v18.19.0
+
+
+**Note:** This error occurs because `done` is getting incrementing beyond `count` by 1 in the last iteration. This causes passing of -1 to `reapeat` function. There we get the error.
 
 ---
 
@@ -3633,11 +4166,51 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let done = 0;
+
+while (rows.length < count) {
+    done++;
+    rows.push(padRow(done, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -3649,11 +4222,51 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let done = 0;
+
+while (rows.length < count) {
+    done++;
+    rows.push(padRow(rows.length + 1, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -3665,11 +4278,48 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -3683,11 +4333,42 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+
 
 ---
 
@@ -3701,11 +4382,46 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+for(let i = count; false; false) {
+    
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+
 
 ---
 
@@ -3719,11 +4435,45 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+for(let i = count; i > 0; false) {
+    
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+**Note:** Do not run. Runs infinitely.
 
 ---
 
@@ -3737,11 +4487,46 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+for(let i = count; i > 0; i = i - 1) {
+    
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+
 
 ---
 
@@ -3749,17 +4534,58 @@ console.log(result);
 
 <p>Again, push the result of calling <code>padRow</code> with your <code>i</code> and <code>count</code> variables to your <code>rows</code> array.</p>
 
-<p>Open up the console to see the upside-down pyramid.</p>
-
 **Source file link:** [pyramidGenerator_step102.js](./pyramidGenerator_step102.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+for(let i = count; i > 0; i = i - 1) {
+    rows.push(padRow(i, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    ###############
+     ############# 
+      ###########  
+       #########   
+        #######    
+         #####     
+          ###      
+           #       
+
 
 ---
 
@@ -3773,11 +4599,54 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+for(let i = count; i > 0; i -= 1) {
+    rows.push(padRow(i, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    ###############
+     ############# 
+      ###########  
+       #########   
+        #######    
+         #####     
+          ###      
+           #       
+
 
 ---
 
@@ -3791,11 +4660,54 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    ###############
+     ############# 
+      ###########  
+       #########   
+        #######    
+         #####     
+          ###      
+           #       
+
 
 ---
 
@@ -3807,11 +4719,48 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+/*
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+
 
 ---
 
@@ -3825,11 +4774,53 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+/*
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+*/
+
+const numbers = [1, 2, 3];
+console.log(numbers);
+
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    [ [33m1[39m, [33m2[39m, [33m3[39m ]
+    
+
 
 ---
 
@@ -3837,23 +4828,85 @@ console.log(result);
 
 <p>The <code>.unshift()</code> method of an array allows you to add a value to the <strong>beginning</strong> of the array, unlike <code>.push()</code> which adds the value at the end of the array. <code>.unshift()</code> returns the new length of the array it was called on.</p>
 
+**Example Code**
+
+```js
+const countDown = [2, 1, 0];
+const newLength = countDown.unshift(3);
+console.log(countDown); // [3, 2, 1, 0]
+console.log(newLength); // 4
+```
+
 <p>Use <code>const</code> to declare an <code>unshifted</code> variable, and assign it the result of calling <code>.unshift()</code> on your <code>numbers</code> array. Pass <code>5</code> as the argument. Then print your <code>unshifted</code> variable.</p>
 
 **Source file link:** [pyramidGenerator_step107.js](./pyramidGenerator_step107.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+/*
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+*/
+
+const numbers = [1, 2, 3];
+console.log(numbers);
+const unshifted = numbers.unshift(5);
+console.log(unshifted);
+console.log(numbers);
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
 
+    [ [33m1[39m, [33m2[39m, [33m3[39m ]
+    [33m4[39m
+    [ [33m5[39m, [33m1[39m, [33m2[39m, [33m3[39m ]
+    
+
+
 ---
 
 ## Step108:
 
 <p>Arrays also have a <code>.shift()</code> method. This will remove the <strong>first</strong> element of the array, unlike <code>.pop()</code> which removes the last element. Here is an example of the <code>.shift()</code> method:</p>
+
+**Example Code**
+
+```js
+const numbers = [1, 2, 3];
+numbers.shift();
+```
 
 <p>The <code>numbers</code> array would be <code>[2, 3]</code>.</p>
 
@@ -3863,11 +4916,62 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+/*
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+*/
+
+const numbers = [1, 2, 3];
+console.log(numbers);
+const shifted = numbers.shift();
+console.log(shifted);
+console.log(numbers);
+const unshifted = numbers.unshift(5);
+console.log(unshifted);
+console.log(numbers);
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    [ [33m1[39m, [33m2[39m, [33m3[39m ]
+    [33m1[39m
+    [ [33m2[39m, [33m3[39m ]
+    [33m3[39m
+    [ [33m5[39m, [33m2[39m, [33m3[39m ]
+    
+
 
 ---
 
@@ -3881,11 +4985,48 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+/*
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+*/
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+/*
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+
 
 ---
 
@@ -3899,11 +5040,54 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+/*
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+           #       
+          ###      
+         #####     
+        #######    
+       #########   
+      ###########  
+     ############# 
+    ###############
+
 
 ---
 
@@ -3917,11 +5101,54 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+for (let i = 1; i <= count; i++) {
+    rows.unshift(padRow(i, count));
+}
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+/*
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    ###############
+     ############# 
+      ###########  
+       #########   
+        #######    
+         #####     
+          ###      
+           #       
+
 
 ---
 
@@ -3935,11 +5162,55 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+let inverted = true;
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+for (let i = 1; i <= count; i++) {
+    rows.unshift(padRow(i, count));
+}
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+/*
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    ###############
+     ############# 
+      ###########  
+       #########   
+        #######    
+         #####     
+          ###      
+           #       
+
 
 ---
 
@@ -3951,11 +5222,58 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+let inverted = true;
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+for (let i = 1; i <= count; i++) {
+    if(inverted) {
+        
+    }
+    rows.unshift(padRow(i, count));
+}
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+/*
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    ###############
+     ############# 
+      ###########  
+       #########   
+        #######    
+         #####     
+          ###      
+           #       
+
 
 ---
 
@@ -3967,11 +5285,57 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+let inverted = true;
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+for (let i = 1; i <= count; i++) {
+    if(inverted) {
+        rows.unshift(padRow(i, count));        
+    }
+}
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+/*
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    ###############
+     ############# 
+      ###########  
+       #########   
+        #######    
+         #####     
+          ###      
+           #       
+
 
 ---
 
@@ -3981,17 +5345,76 @@ console.log(result);
 
 <p>In earlier steps, you learned how to work with <code>else</code> statement like this:</p>
 
+**Example Code**
+
+```js
+if (condition) {
+  // if condition is true, run this code
+} else {
+  // if condition is false, run this code
+}
+```
+
 <p>Add an <code>else</code> block to your <code>if</code> block.</p>
 
 **Source file link:** [pyramidGenerator_step115.js](./pyramidGenerator_step115.js)
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+let inverted = true;
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+for (let i = 1; i <= count; i++) {
+    if(inverted) {
+        rows.unshift(padRow(i, count));        
+    }
+    else {
+
+    }
+}
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+/*
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    ###############
+     ############# 
+      ###########  
+       #########   
+        #######    
+         #####     
+          ###      
+           #       
+
 
 ---
 
@@ -4003,11 +5426,60 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+let inverted = true;
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// Change to different kind of loop
+for (let i = 1; i <= count; i++) {
+    if(inverted) {
+        rows.unshift(padRow(i, count));        
+    }
+    else {
+        rows.push(padRow(i, count));        
+    }
+}
+
+/*
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+/*
+for(let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+*/
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    ###############
+     ############# 
+      ###########  
+       #########   
+        #######    
+         #####     
+          ###      
+           #       
+
 
 ---
 
@@ -4021,11 +5493,47 @@ console.log(result);
 
 
 ```js
+const character = "#";
+const count = 8;
+const rows = [];
+let inverted = true;
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+for (let i = 1; i <= count; i++) {
+    if(inverted) {
+        rows.unshift(padRow(i, count));        
+    }
+    else {
+        rows.push(padRow(i, count));        
+    }
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+    ###############
+     ############# 
+      ###########  
+       #########   
+        #######    
+         #####     
+          ###      
+           #       
+
 
 ---
 
@@ -4041,10 +5549,48 @@ console.log(result);
 
 
 ```js
+const character = "!";
+const count = 10;
+const rows = [];
+let inverted = false;
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+for (let i = 1; i <= count; i++) {
+    if(inverted) {
+        rows.unshift(padRow(i, count));        
+    }
+    else {
+        rows.push(padRow(i, count));        
+    }
+}
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 ```
 
 
 ### Execution logs: 
+
+    
+             !         
+            !!!        
+           !!!!!       
+          !!!!!!!      
+         !!!!!!!!!     
+        !!!!!!!!!!!    
+       !!!!!!!!!!!!!   
+      !!!!!!!!!!!!!!!  
+     !!!!!!!!!!!!!!!!! 
+    !!!!!!!!!!!!!!!!!!!
+
 
 ---
