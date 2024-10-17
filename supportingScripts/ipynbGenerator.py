@@ -16,7 +16,7 @@ def webScrapJob(stepNo):
     elements = []
     driver = webdriver.Chrome(options=options)
 
-    url = f"https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/review-js-fundamentals-by-building-a-gradebook-app/step-{stepNo}"  # UPDATE HERE
+    url = f"https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/learn-basic-javascript-by-building-a-role-playing-game/step-{stepNo}"  # UPDATE HERE
 
     driver.get(url)
     element = ""
@@ -93,12 +93,12 @@ def fetchAndDisplaySrcFileAsCodeBlock(fileName):
 )
 jnb['cells'].append(cell)
 
-projectIntro = """In this mini project, you will get to review JavaScript fundamentals like functions, variables, conditionals and more by building a gradebook app.
+projectIntro = """JavaScript is a powerful scripting language that you can use to make web pages interactive. It's one of the core technologies of the web, along with HTML and CSS. All modern browsers support JavaScript.
 
-This will give you an opportunity to solve small problems and get a better understanding of the basics."""  # UPDATE HERE (Copy paste from freeCodeCamp website course page)
-projectTitle = "# " + "Review JavaScript Fundamentals by Building a Gradebook App"  # UPDATE HERE
-projectName = "gradeBookApp"  # UPDATE HERE
-number_of_steps = 4  # UPDATE HERE
+In this practice project, you'll learn fundamental programming concepts in JavaScript by coding your own Role Playing Game. You'll learn how to work with arrays, strings, objects, functions, loops, `if`/`else` statements, and more."""  # UPDATE HERE (Copy paste from freeCodeCamp website course page)
+projectTitle = "# " + "Learn Basic JavaScript by Building a Role Playing Game"  # UPDATE HERE
+projectName = "rolePlayingGame"  # UPDATE HERE
+number_of_steps = 173  # UPDATE HERE
 projectPath = "../" + projectName
 
 cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"{projectTitle}"])
@@ -116,11 +116,11 @@ for i in range(1, number_of_steps + 1):
     elements = webScrapJob(i)
     # END: Webscraping
 
-    srcFileName = f"{projectName}_step{i}.js"
+    srcFileName = f"{projectName}_step{i:03d}.js"
 
     Path(f"{projectPath}/{srcFileName}").touch()
 
-    cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"## Step{i}:"])
+    cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"## Step{i:03d}:"])
     jnb['cells'].append(cell)
     for element in elements:
         cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"{element}"])

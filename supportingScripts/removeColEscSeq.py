@@ -1,6 +1,6 @@
 import fileinput
 
-projectName = "gradeBookApp"  # UPDATE HERE
+projectName = "rolePlayingGame"  # UPDATE HERE
 projectPath = "../" + projectName
 
 lookFor = [
