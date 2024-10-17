@@ -1,6 +1,6 @@
 import fileinput
 
-projectName = "pyramidGenerator"  # UPDATE HERE
+projectName = "gradeBookApp"  # UPDATE HERE
 projectPath = "../" + projectName
 
 lookFor = [

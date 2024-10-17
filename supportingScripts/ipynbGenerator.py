@@ -16,7 +16,7 @@ def webScrapJob(stepNo):
     elements = []
     driver = webdriver.Chrome(options=options)
 
-    url = f"https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/learn-introductory-javascript-by-building-a-pyramid-generator/step-{stepNo}"  # UPDATE HERE
+    url = f"https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/review-js-fundamentals-by-building-a-gradebook-app/step-{stepNo}"  # UPDATE HERE
 
     driver.get(url)
     element = ""
@@ -93,12 +93,12 @@ def fetchAndDisplaySrcFileAsCodeBlock(fileName):
 )
 jnb['cells'].append(cell)
 
-projectIntro = """JavaScript is a powerful scripting language that you can use to make web pages interactive. It's one of the core technologies of the web, along with HTML and CSS. All modern browsers support JavaScript.
+projectIntro = """In this mini project, you will get to review JavaScript fundamentals like functions, variables, conditionals and more by building a gradebook app.
 
-In this practice project, you'll learn fundamental programming concepts in JavaScript by coding your own Pyramid Generator. You'll learn how to work with arrays, strings, functions, loops, if/else statements, and more."""  # UPDATE HERE (Copy paste from freeCodeCamp website course page)
-projectTitle = "# " + "Learn Introductory JavaScript by Building a Pyramid Generator"  # UPDATE HERE
-projectName = "pyramidGenerator"  # UPDATE HERE
-number_of_steps = 118  # UPDATE HERE
+This will give you an opportunity to solve small problems and get a better understanding of the basics."""  # UPDATE HERE (Copy paste from freeCodeCamp website course page)
+projectTitle = "# " + "Review JavaScript Fundamentals by Building a Gradebook App"  # UPDATE HERE
+projectName = "gradeBookApp"  # UPDATE HERE
+number_of_steps = 4  # UPDATE HERE
 projectPath = "../" + projectName
 
 cell = nbformat.NotebookNode(cell_type='markdown', metadata={}, source=[f"{projectTitle}"])

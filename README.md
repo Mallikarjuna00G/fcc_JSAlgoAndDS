@@ -28,3 +28,4 @@ Command used will be of the format: `node <scriptName>`. Currently using Node.js
 
 ## Topics
 1. Learn Introductory JavaScript by Building a Pyramid Generator: [pyramidGenerator](./pyramidGenerator/)
+2. Review JavaScript Fundamentals by Building a Gradebook App: [gradeBookApp](./gradeBookApp/)
