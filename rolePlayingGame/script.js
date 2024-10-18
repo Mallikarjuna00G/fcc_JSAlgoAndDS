@@ -21,6 +21,16 @@ const monsterHealthText = document.querySelector("#monsterHealth");
 
 const locations = [];
 
+const cat = {
+    name: "Whiskers",  // key: value
+    "Number of legs": 4  // key: value. key has space in it; therefore covered in quotes.
+};  // cat is an object. Will have its items in key: value pair form
+
+
+// Accessing the object items
+console.log(cat.name);  // dot operator
+console.log(cat["Number of legs"]);  // index (brackets) operator. Needed method when key name contains spaces
+
 // Initialize buttons
 button1.onclick = goStore;
 button2.onclick = goCave;
