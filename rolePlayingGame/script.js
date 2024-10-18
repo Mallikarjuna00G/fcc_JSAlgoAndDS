@@ -126,10 +126,8 @@ function goCave() {
 
 function buyHealth() {
     if(gold >= 10) {
-        gold -= 10;
-        health += 10;
-        goldText.innerText = gold;
-        healthText.innerText = health;
+        gold_lose(10);
+        health_add(10);
     }
     else {
         text.innerText = "You do not have enough gold to buy health."
@@ -139,9 +137,8 @@ function buyHealth() {
 function buyWeapon() {
     if(currentWeaponIndex < weapons.length - 1) {
         if(gold >= 30) {
-            gold -= 30;
+            gold_lose(30);
             currentWeaponIndex++;
-            goldText.innerText = gold;
             let newWeapon = weapons[currentWeaponIndex].name;
             text.innerText = "You now have a "+ newWeapon + ".";
     
@@ -189,8 +186,7 @@ function fightDragon() {
 
 function sellWeapon() {
     if(inventory.length > 1) {
-        gold += 15;
-        goldText.innerText = gold;
+        gold_add(15);
         let currenWeapon = inventory.shift();
         text.innerText = "You sold a " + currenWeapon + ".";
         text.innerText += " In your inventory you have: " + inventory;
@@ -202,26 +198,23 @@ function sellWeapon() {
 
 function goFight() {
     update(locations[3]);
-    monsterHealth = monsters[fighting].health;
+    monsterHealth_lose(monsterHealth);
+    monsterHealth_add(monsters[fighting].health);
     monsterStats.style.display = "block";
     monsterName.innerText = monsters[fighting].name;
-    monsterHealthText = monsterHealth;
 }
 
 function attack() {
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText = " You attack it with your " + weapons[currentWeaponIndex].name + ".";
 
-    health -= getMonsterAttackValue(monsters[fighting].level);
+    health_lose(getMonsterAttackValue(monsters[fighting].level));
     if(isMonsterHit()) {
-        monsterHealth -= weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1;
+        monsterHealth_lose(weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1);
     }
     else {
         text.innerText += " You miss.";
     }
-
-    healthText.innerText = health;
-    monsterHealthText.innerText = monsterHealth;
 
     if(health <= 0) {
         lose();
@@ -258,24 +251,20 @@ function lose() {
 }
 
 function defeatMonster() {
-    gold += Math.floor(monsters[fighting].level * 6.7);
-    xp += monsters[fighting].level;
+    gold_add(Math.floor(monsters[fighting].level * 6.7));
+    xp_add(monsters[fighting].level);
 
-    goldText.innerText = gold;
-    xpText.innerText = xp;
     update(locations[4]);
 }
 
 function restart() {
-    xp = 0;
-    health = 100;
-    gold = 50;
+    xp_lose(xp);
+    health_lose(health);
+    health_add(100);
+    gold_lose(gold);
+    gold_add(50);
     currentWeaponIndex = 0;
     inventory = ["stick"];
-
-    xpText.innerText = xp;
-    healthText.innerText = health;
-    goldText.innerText = gold;
 
     goTown();
 }
@@ -299,13 +288,11 @@ function pick(guess) {
     }
     if(numbers.includes(guess)) {
         text.innerText += "Right! You win 20 gold!";
-        gold += 20;
-        goldText.innerText = gold;
+        gold_add(20);
     }
     else {
         text.innerText += "Wrong! You lose 10 health!";
-        health -= 10;
-        healthText.innerText = health;
+        health_lose(10);
         if(health <= 0) {
             lose();
         }
@@ -318,4 +305,48 @@ function pickTwo() {
 
 function pickEight() {
     pick(8);
+}
+
+function xp_add(value) {
+    xp += value;
+    xpText.innerText = xp;
+}
+
+function xp_lose(value) {
+    xp -= value;
+    xp = xp > 0 ? xp : 0;
+    xpText.innerText = xp;
+}
+
+function health_add(value) {
+    health += value;
+    healthText.innerText = health;
+}
+
+function health_lose(value) {
+    health -= value;
+    health = health > 0 ? health : 0;
+    healthText.innerText = health;
+}
+
+function gold_add(value) {
+    gold += value;
+    goldText.innerText = gold;
+}
+
+function gold_lose(value) {
+    gold -= value;
+    gold = gold > 0 ? gold : 0;
+    goldText.innerText = gold;
+}
+
+function monsterHealth_add(value) {
+    monsterHealth += value;
+    monsterHealthText.innerText = monsterHealth;
+}
+
+function monsterHealth_lose(value) {
+    monsterHealth -= value;
+    monsterHealth = monsterHealth > 0 ? monsterHealth : 0;
+    monsterHealthText.innerText = monsterHealth;
 }
