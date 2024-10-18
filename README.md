@@ -30,3 +30,4 @@ Command used will be of the format: `node <scriptName>`. Currently using Node.js
 1. Learn Introductory JavaScript by Building a Pyramid Generator: [pyramidGenerator](./pyramidGenerator/)
 2. Review JavaScript Fundamentals by Building a Gradebook App: [gradeBookApp](./gradeBookApp/)
 3. Learn Basic JavaScript by Building a Role Playing Game: [rolePlayingGame](./rolePlayingGame/)
+4. Learn Basic Debugging by Building a Random Background Color Changer: [randomBgColorChanger](./randomBgColorChanger/)
