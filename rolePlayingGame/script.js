@@ -50,6 +50,12 @@ const locations = [
         "button functions": [goTown, goTown, goTown],
         text: "The monster screams Arg! as it dies. You gain experience points and find gold."
     },
+    {
+        name: "lose",
+        "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+        "button functions": [restart, restart, restart],
+        text: "You die. &#x2620;"
+    },
 ];
 
 const weapons = [
@@ -203,7 +209,11 @@ function attack() {
     if(health <= 0) {
         lose();
     } else if(monsterHealth <= 0) {
-        deafeatMonster();
+        if(fighting === 2) {
+            winGame();
+        } else {
+            defeatMonster();
+        }
     }
 }
 
@@ -222,4 +232,18 @@ function defeatMonster() {
     goldText.innerText = gold;
     xpText.innerText = xp;
     update(locations[4]);
+}
+
+function restart() {
+    xp = 0;
+    health = 100;
+    gold = 50;
+    currentWeaponIndex = 0;
+    inventory = ["stick"];
+
+    xpText.innerText = xp;
+    healthText.innerText = health;
+    goldText.innerText = gold;
+
+    goTown();
 }
