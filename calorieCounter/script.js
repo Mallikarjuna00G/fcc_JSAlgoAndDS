@@ -21,3 +21,26 @@ function isInvalidInput(str) {
 
 // console.log(isInvalidInput("1e3"));  // This will return an array with all the details of the passed parameter. 
 // console.log(isInvalidInput("10"));  // This will return null
+
+function addEntry() {
+    // const targetId = '#' + entryDropdown.value;  // Will be used directly in the template literal.
+    // const targetInputContainer = document.querySelector(targetId + ' .input-container');  // Normal way
+
+    // const targetInputContainer = document.querySelector(`${targetId} .input-container`);  // Template literal.
+
+    const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);  // Template literal.
+
+    const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length + 1;  // returns a NodeList of all the elements that match the selector.
+
+    const HTMLString = `
+    <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
+    <input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name" />
+    <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
+    <input type="number" placeholder="Calories" id="${entryDropdown.value}-${entryNumber}-calories" min="0"/>
+    `;  // template literal
+
+    targetInputContainer.insertAdjacentHTML('beforeend', HTMLString);
+
+}
+
+addEntryButton.addEventListener('click', addEntry);
