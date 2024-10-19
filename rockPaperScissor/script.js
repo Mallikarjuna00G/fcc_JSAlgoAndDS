@@ -4,21 +4,35 @@ function getRandomComputerResult() {
     return options[randomIndex];
 }
   
-function hasPlayerWonTheRound(player, computer) {    
-    if(
-        (player === "Rock" && computer === "Paper") ||
-        (player === "Paper" && computer === "Scissors") ||
-        (player === "Scissors" && computer === "Rock") ||
-        (player === computer)
-    ) {
-        return false;
+let playerScore = 0;
+let computerScore = 0;
+  
+function hasPlayerWonTheRound(player, computer) {
+    return (
+      (player === "Rock" && computer === "Scissors") ||
+      (player === "Scissors" && computer === "Paper") ||
+      (player === "Paper" && computer === "Rock")
+    );
+}
+
+function getRoundResults(userOption) {
+    const computerResult = getRandomComputerResult();
+    let roundResult = hasPlayerWonTheRound(userOption, computerResult);
+
+    let msg = '';
+    if(roundResult) {
+        playerScore++;
+        msg = `Player wins! ${userOption} beats ${computerResult}`;
+    } else {
+        computerScore++;
+        msg = `Computer wins! ${computerResult} beats ${userOption}`;
+        if(computerResult === userOption) {
+            msg = `It's a tie! Both chose ${userOption}`;
+            computerScore--;
+        }
     }
-    return true;
+    return msg;
 }
   
-console.log(hasPlayerWonTheRound("Rock", "Paper")); 
-console.log(hasPlayerWonTheRound("Paper", "Scissors")); 
-console.log(hasPlayerWonTheRound("Scissors", "Rock")); 
-console.log(hasPlayerWonTheRound("Rock", "Rock")); 
-console.log(hasPlayerWonTheRound("Rock", "Scissors")); 
-console.log(hasPlayerWonTheRound("Scissors", "Rock")); 
+console.log(getRoundResults("Rock"));
+console.log("Player Score: ", playerScore, "Computer Score: ", computerScore);
