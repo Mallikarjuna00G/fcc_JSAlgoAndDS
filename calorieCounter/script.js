@@ -9,9 +9,15 @@ const output = document.getElementById('output');
 let isError = false;
 
 function cleanInputString(str) {
-    console.log("original string: ", str);
-    const regex = /[+-\s]/g;
+    const regex = /[+-\s]/g;  // [] represents character class
     return str.replace(regex, "");
 }
 
-console.log(cleanInputString("+-99"));
+function isInvalidInput(str) {
+    // const regex = /[0-9]+e[0-9]+/i;  // To match exponential number (Ex. 10e-4)
+    const regex = /\d+e\d+/;  // \d represent a digit
+    return str.match(regex);
+}
+
+// console.log(isInvalidInput("1e3"));  // This will return an array with all the details of the passed parameter. 
+// console.log(isInvalidInput("10"));  // This will return null
