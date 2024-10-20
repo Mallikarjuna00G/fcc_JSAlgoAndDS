@@ -33,3 +33,4 @@ Command used will be of the format: `node <scriptName>`. Currently using Node.js
 4. Learn Basic Debugging by Building a Random Background Color Changer: [randomBgColorChanger](./randomBgColorChanger/)
 5. Learn Form Validation by Building a Calorie Counter: [calorieCounter](./calorieCounter/)
 6. Review DOM Manipulation by Building a Rock, Paper, Scissors Game: [rockPaperScissor](./rockPaperScissor/)
+7. Learn Basic String and Array Methods by Building a Music Player: [musicPlayer](./musicPlayer/)
