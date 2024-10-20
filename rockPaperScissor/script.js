@@ -6,9 +6,9 @@ function getRandomComputerResult() {
   
 function hasPlayerWonTheRound(player, computer) {
     return (
-      (player === "Rock" && computer === "Scissors") ||
-      (player === "Scissors" && computer === "Paper") ||
-      (player === "Paper" && computer === "Rock")
+        (player === "Rock" && computer === "Scissors") ||
+        (player === "Scissors" && computer === "Paper") ||
+        (player === "Paper" && computer === "Rock")
     );
 }
   
@@ -19,13 +19,13 @@ function getRoundResults(userOption) {
     const computerResult = getRandomComputerResult();
   
     if (hasPlayerWonTheRound(userOption, computerResult)) {
-      playerScore++;
-      return `Player wins! ${userOption} beats ${computerResult}`;
+        playerScore++;
+        return `Player wins! ${userOption} beats ${computerResult}`;
     } else if (computerResult === userOption) {
-      return `It's a tie! Both chose ${userOption}`;
+        return `It's a tie! Both chose ${userOption}`;
     } else {
-      computerScore++;
-      return `Computer wins! ${computerResult} beats ${userOption}`;
+        computerScore++;
+        return `Computer wins! ${computerResult} beats ${userOption}`;
     }
 }
   
@@ -40,24 +40,32 @@ function showResults(userOption) {
     roundResultsMsg.innerText = getRoundResults(userOption);
     computerScoreSpanElement.innerText = computerScore;
     playerScoreSpanElement.innerText = playerScore;
-    
-    let thereIsWinner = false;
-    let who = "";
-    if(playerScore === 3) {
-        who = "Player";
-        thereIsWinner = true;
-    } else if(computerScore === 3) {
-        who = "Computer";
-        thereIsWinner = true;
+  
+    if (playerScore === 3 || computerScore === 3) {
+      winnerMsgElement.innerText = `${
+        playerScore === 3 ? "Player" : "Computer"
+      } has won the game!`;
+  
+      resetGameBtn.style.display = "block";
+      optionsContainer.style.display = "none";
     }
-
-    if(thereIsWinner) {
-        winnerMsgElement.innerText = who + " has won the game!";
-
-        optionsContainer.style.display = 'none';
-        resetGameBtn.style.display = 'block';
-    }
+  
 };
+
+function resetGame() {
+    playerScore = 0;
+    playerScoreSpanElement.innerText = 0;
+    computerScore = 0;
+    computerScoreSpanElement.innerText = 0;
+
+    resetGameBtn.style.display = 'none';
+    optionsContainer.style.display = 'block';
+
+    winnerMsgElement.innerText = '';
+    roundResultsMsg.innerText = '';
+};
+  
+resetGameBtn.addEventListener("click", resetGame);
   
 const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
