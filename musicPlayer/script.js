@@ -107,9 +107,19 @@ const printMessage = (org) => {
 
 printMessage('freeCodeCamp');
 
+/*
 const addTwoNumbers = (num1, num2) => {
     return num1 + num2;
 }
 
 console.log(addTwoNumbers(3, 4));
+*/
 
+/**
+ * If the arrow function is returning simple expression,
+ * you can omit the return keyword and the curly braces {}. This is called an implicit return.
+ * 
+ * If your arrow function has multiple lines of code in the function body, then you need to use the return keyword and the curly braces {}.
+ */
+
+const addTwoNumbers = (num1, num2) => num1 + num2;
