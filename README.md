@@ -34,3 +34,4 @@ Command used will be of the format: `node <scriptName>`. Currently using Node.js
 5. Learn Form Validation by Building a Calorie Counter: [calorieCounter](./calorieCounter/)
 6. Review DOM Manipulation by Building a Rock, Paper, Scissors Game: [rockPaperScissor](./rockPaperScissor/)
 7. Learn Basic String and Array Methods by Building a Music Player: [musicPlayer](./musicPlayer/)
+8. **Certification Project (1/5)::** Build a Palindrome Checker: [palindromeChecker](./palindromeChecker/)
