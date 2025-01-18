@@ -35,3 +35,4 @@ Command used will be of the format: `node <scriptName>`. Currently using Node.js
 6. Review DOM Manipulation by Building a Rock, Paper, Scissors Game: [rockPaperScissor](./rockPaperScissor/)
 7. Learn Basic String and Array Methods by Building a Music Player: [musicPlayer](./musicPlayer/)
 8. **Certification Project (1/5)::** Build a Palindrome Checker: [palindromeChecker](./palindromeChecker/)
+9. Learn the `Date` Object by Building a Date Formatter: [dateFormatter](./dateFormatter/)
