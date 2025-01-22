@@ -38,3 +38,4 @@ Command used will be of the format: `node <scriptName>`. Currently using Node.js
 9. Learn the `Date` Object by Building a Date Formatter: [dateFormatter](./dateFormatter/)
 10. Learn Modern JavaScript Methods by Building Football Team Cards: [footballTeamCards](./footballTeamCards/)
 11. Learn localStorage by Building a Todo App: [toDoApp](./toDoApp/)
+12. Learn Recursion by Building a Decimal to Binary Converter: [decimalToBinaryConverter](./decimalToBinaryConverter/)
