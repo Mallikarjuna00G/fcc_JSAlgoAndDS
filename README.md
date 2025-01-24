@@ -41,3 +41,4 @@ Command used will be of the format: `node <scriptName>`. Currently using Node.js
 12. Learn Recursion by Building a Decimal to Binary Converter: [decimalToBinaryConverter](./decimalToBinaryConverter/)
 13. **Certification Project (2/5)::** Build a Roman Numeral Converter Project: [romanNumeralConverter](./romanNumeralConverter/)
 14. Learn Regular Expressions by Building a Spam Filter: [spamFilter](./spamFilter/)
+15. Learn Basic Algorithmic Thinking by Building a Number Sorter: [numberSorter](./numberSorter/)
