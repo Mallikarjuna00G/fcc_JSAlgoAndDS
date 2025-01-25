@@ -42,3 +42,4 @@ Command used will be of the format: `node <scriptName>`. Currently using Node.js
 13. **Certification Project (2/5)::** Build a Roman Numeral Converter Project: [romanNumeralConverter](./romanNumeralConverter/)
 14. Learn Regular Expressions by Building a Spam Filter: [spamFilter](./spamFilter/)
 15. Learn Basic Algorithmic Thinking by Building a Number Sorter: [numberSorter](./numberSorter/)
+16. Learn Advanced Array Methods by Building a Statistics Calculator: [statisticsCalculator](./statisticsCalculator/)
