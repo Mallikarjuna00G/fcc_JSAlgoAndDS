@@ -46,4 +46,5 @@ Command used will be of the format: `node <scriptName>`. Currently using Node.js
 17. Learn Functional Programming by Building a Spreadsheet: [spreadsheet](./spreadsheet/)
 18. **Certification Project (3/5)::** Build a Telephone Number Validator Project: [telephoneNUmberValidator](./telephoneNUmberValidator/)
 19. Learn Basic OOP by Building a Shopping Cart: [shoppingCart](./shoppingCart/)
-20. Learn Intermediate OOP by Building a Platformer Game, Not started: [platformerGame](./platformerGame/)
+20. Learn Intermediate OOP by Building a Platformer Game: [platformerGame](./platformerGame/)
+21. Review Algorithmic Thinking by Building a Dice Game: [diceGame](./diceGame/)
