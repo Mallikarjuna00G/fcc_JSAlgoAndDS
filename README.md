@@ -45,3 +45,4 @@ Command used will be of the format: `node <scriptName>`. Currently using Node.js
 16. Learn Advanced Array Methods by Building a Statistics Calculator: [statisticsCalculator](./statisticsCalculator/)
 17. Learn Functional Programming by Building a Spreadsheet: [spreadsheet](./spreadsheet/)
 18. **Certification Project (3/5)::** Build a Telephone Number Validator Project: [telephoneNUmberValidator](./telephoneNUmberValidator/)
+19. Learn Basic OOP by Building a Shopping Cart: []()
