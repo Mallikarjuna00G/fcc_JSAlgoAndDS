@@ -48,3 +48,4 @@ Command used will be of the format: `node <scriptName>`. Currently using Node.js
 19. Learn Basic OOP by Building a Shopping Cart: [shoppingCart](./shoppingCart/)
 20. Learn Intermediate OOP by Building a Platformer Game: [platformerGame](./platformerGame/)
 21. Review Algorithmic Thinking by Building a Dice Game: [diceGame](./diceGame/)
+22. **Certification Project (4/5)::** Build a Cash Register Project: [cashRegister](./cashRegister/)
